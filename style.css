@@ -494,31 +494,27 @@ img, svg { display: block; max-width: 100%; }
   perspective: 1800px;
 }
 
-.chair {
-  display: block;
-  text-align: center;
-  color: var(--paper);
-  transition: transform .4s ease;
+.chair3d { text-align: center; }
+.chair-mv {
+  width: 100%;
+  height: clamp(250px, 26vw, 340px);
+  background-color: transparent;
+  --poster-color: transparent;
+  --progress-bar-color: #c9a24e;
+  cursor: grab;
 }
-.chair:hover { transform: translateY(-6px); }
-.chair-svg { position: relative; }
-.chair-art { display: block; width: 100%; height: auto; overflow: visible; }
-.chair-figure { fill: #100c08; stroke: #6a5730; stroke-width: 1.2; transition: fill .35s ease; }
-.chair-arm { fill: none; stroke: #100c08; stroke-width: 10; stroke-linecap: round; }
-.chair:hover .chair-figure { fill: #2a1e10; }
+.chair-mv:active { cursor: grabbing; }
+.chair-plate { display: block; margin-top: 4px; }
 .chair-name {
-  position: absolute;
-  top: 23.3%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 54%;
+  display: block;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
-  font-size: clamp(.9rem, 1.5vw, 1.2rem);
-  line-height: 1.02;
-  color: #efe5d2;
+  font-size: clamp(1.35rem, 2.2vw, 1.95rem);
+  line-height: 1;
+  color: var(--paper);
+  transition: color .25s ease;
 }
-.chair-plate { margin-top: 6px; }
+.chair-plate:hover .chair-name { color: #e6c877; }
 .chair-plate .director-year {
   display: block;
   font-size: .66rem;
@@ -526,7 +522,7 @@ img, svg { display: block; max-width: 100%; }
   text-transform: uppercase;
   color: #c9ba92;
   opacity: .85;
-  margin-bottom: 3px;
+  margin: 6px 0 2px;
 }
 .chair-plate em { font-style: italic; font-size: .92rem; color: var(--paper-soft); }
 
