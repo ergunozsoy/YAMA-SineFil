@@ -139,8 +139,8 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .sound-toggle {
-  position: absolute;
-  z-index: 8;
+  position: fixed;
+  z-index: 60;
   right: clamp(16px, 3vw, 34px);
   bottom: clamp(20px, 4vh, 40px);
   display: inline-flex;
@@ -432,9 +432,9 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* per-collection photo + cinematic grade */
-.collection-card.silent  .coll-img { background-image: url("assets/images/coll-silent.jpg");  filter: sepia(.45) brightness(.82) contrast(1.05); }
-.collection-card.noir    .coll-img { background-image: url("assets/images/coll-noir.jpg");    filter: grayscale(1) brightness(.72) contrast(1.22); }
-.collection-card.auteurs .coll-img { background-image: url("assets/images/coll-masters.jpg"); filter: brightness(.8) saturate(1.08); }
+.collection-card.silent  .coll-img { background-image: url("assets/images/coll-silent.jpg"); }
+.collection-card.noir    .coll-img { background-image: url("assets/images/coll-noir.jpg"); }
+.collection-card.auteurs .coll-img { background-image: url("assets/images/coll-masters.jpg"); }
 
 .card-number {
   position: absolute;
@@ -471,8 +471,8 @@ img, svg { display: block; max-width: 100%; }
   position: relative;
   color: var(--paper);
   background:
-    radial-gradient(ellipse at 50% -8%, rgba(163,15,25,.30), transparent 62%),
-    linear-gradient(180deg, #1c0e0c 0%, #0b0605 100%);
+    radial-gradient(ellipse at 50% -8%, rgba(120,92,52,.16), transparent 62%),
+    linear-gradient(180deg, #17140f 0%, #0a0807 100%);
 }
 
 /* faint damask/carpet texture on the lobby wall */
@@ -494,156 +494,42 @@ img, svg { display: block; max-width: 100%; }
   perspective: 1800px;
 }
 
-.win {
-  position: relative;
+.chair {
   display: block;
-  aspect-ratio: 3 / 4.3;
-  color: #f4e9d2;
-  transition: transform .45s ease;
+  text-align: center;
+  color: var(--paper);
+  transition: transform .4s ease;
 }
-
-.win:hover { transform: translateY(-5px); }
-
-/* golden arched window frame */
-.win-frame {
+.chair:hover { transform: translateY(-6px); }
+.chair-svg { position: relative; }
+.chair-art { display: block; width: 100%; height: auto; overflow: visible; }
+.chair-figure { fill: #100c08; stroke: #6a5730; stroke-width: 1.2; transition: fill .35s ease; }
+.chair-arm { fill: none; stroke: #100c08; stroke-width: 10; stroke-linecap: round; }
+.chair:hover .chair-figure { fill: #2a1e10; }
+.chair-name {
   position: absolute;
-  inset: 0;
-  border-radius: 50% 50% 6px 6px / 20% 20% 3px 3px;
-  background: linear-gradient(180deg, #3a2a12, #211507);
-  box-shadow:
-    0 34px 64px rgba(0,0,0,.6),
-    inset 0 0 0 3px #c9a24e,
-    inset 0 0 0 9px #170f05,
-    inset 0 0 0 12px #8a6d2c;
-  overflow: hidden;
-}
-
-/* keystone at the crown of the arch */
-.win-frame::before {
-  content: "";
-  position: absolute;
-  top: 6px;
+  top: 23.3%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 46px;
-  height: 26px;
-  background: linear-gradient(180deg, #eccd7c, #9a7a2e);
-  clip-path: polygon(28% 0, 72% 0, 100% 100%, 0 100%);
-  box-shadow: 0 2px 6px rgba(0,0,0,.55);
-  z-index: 6;
+  transform: translate(-50%, -50%);
+  width: 54%;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(.9rem, 1.5vw, 1.2rem);
+  line-height: 1.02;
+  color: #efe5d2;
 }
-
-/* glass pane */
-.win-glass {
-  position: absolute;
-  top: 22px;
-  left: 18px;
-  right: 18px;
-  bottom: 96px;
-  border-radius: 46% 46% 3px 3px / 26% 26% 2px 2px;
-  overflow: hidden;
-  background: #0a0708;
-  box-shadow: inset 0 0 0 2px rgba(201,162,78,.75), inset 0 0 30px rgba(0,0,0,.65);
-}
-
-/* reflection streak on the glass */
-.win-glass::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 4;
-  pointer-events: none;
-  background: linear-gradient(122deg, rgba(255,255,255,.18) 0 16%, transparent 32%);
-}
-
-/* the view behind the glass — each director a mood */
-.win-view {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  transform: scale(1.03);
-  filter: brightness(.72) saturate(1.05);
-  opacity: .92;
-  transition: transform .9s ease, filter .6s ease, opacity .6s ease;
-}
-.win:hover .win-view {
-  transform: scale(1.1);
-  filter: brightness(1.08) saturate(1.18);
-  opacity: 1;
-}
-
-.view-kubrick   { background: radial-gradient(circle at 50% 40%, #a6d0ea, #2b5a7d 42%, #0a1622 100%); }
-.view-tarkovsky { background: radial-gradient(circle at 50% 58%, #d3bd83, #5c6b3f 46%, #1a1f12 100%); }
-.view-hitchcock { background: radial-gradient(circle at 50% 44%, #dfe6e0, #46685b 42%, #0f1a16 100%); }
-.view-scorsese  { background: radial-gradient(circle at 50% 56%, #ffd39a, #c0431f 46%, #2f0a08 100%); }
-.view-coppola   { background: radial-gradient(circle at 50% 50%, #f0cd84, #8a5a20 46%, #241408 100%); }
-.view-ceylan    { background: radial-gradient(circle at 50% 60%, #ecd89c, #9a7d3e 44%, #221b0f 100%); }
-
-/* muntins / window grille */
-.win-grille {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  pointer-events: none;
-  opacity: .9;
-  transition: opacity .5s ease;
-  background:
-    linear-gradient(90deg, transparent calc(50% - 1px), rgba(201,162,78,.6) 50%, transparent calc(50% + 1px)),
-    linear-gradient(180deg, transparent calc(33.3% - 1px), rgba(201,162,78,.45) 33.3%, transparent calc(33.3% + 1px)),
-    linear-gradient(180deg, transparent calc(66.6% - 1px), rgba(201,162,78,.45) 66.6%, transparent calc(66.6% + 1px));
-}
-.win:hover .win-grille { opacity: .45; }
-
-/* director emblem badge */
-.win-emblem {
-  position: absolute;
-  z-index: 5;
-  right: 18px;
-  bottom: 100px;
-  width: 84px;
-  height: 84px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: #2a1802;
-  background: radial-gradient(circle at 38% 32%, #f6df97, #8a6d2c);
-  box-shadow: 0 5px 14px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.4);
-  transition: transform .45s ease;
-}
-.win:hover .win-emblem { transform: scale(1.1) rotate(-3deg); }
-.win-emblem svg { width: 58%; height: 58%; display: block; }
-
-/* brass nameplate */
-.win-plate {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 20px;
-  z-index: 6;
-  padding: 12px 16px;
-  border-radius: 3px;
-  color: #241403;
-  background: linear-gradient(180deg, #dcbc72, #9c7a34);
-  box-shadow: 0 5px 12px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.28);
-}
-.win-plate .director-year {
-  font-size: .64rem;
+.chair-plate { margin-top: 6px; }
+.chair-plate .director-year {
+  display: block;
+  font-size: .66rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  opacity: .82;
-}
-.win-plate strong {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.45rem, 2.3vw, 2.1rem);
-  line-height: .96;
-  margin: 2px 0 1px;
-}
-.win-plate em {
-  font-style: italic;
-  font-size: .86rem;
+  color: #c9ba92;
   opacity: .85;
+  margin-bottom: 3px;
 }
+.chair-plate em { font-style: italic; font-size: .92rem; color: var(--paper-soft); }
+
 
 .film-grid {
   border-top: 1px solid var(--line);
@@ -918,4 +804,22 @@ footer {
     order: -1;
     padding: 16px;
   }
+}
+
+
+/* ===== Sinema aracı süsleri ===== */
+.sec-icon {
+  display: block;
+  width: clamp(44px, 4vw, 58px);
+  height: auto;
+  color: #c9a24e;
+  margin-bottom: 16px;
+  opacity: .92;
+}
+.film-divider {
+  height: 34px;
+  width: min(1180px, calc(100% - 40px));
+  margin: 8px auto;
+  opacity: .5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='34'%3E%3Crect width='40' height='34' fill='%2314100a'/%3E%3Crect x='6' y='4' width='12' height='6' rx='1.5' fill='none' stroke='%23c9a24e' stroke-width='1.3'/%3E%3Crect x='22' y='4' width='12' height='6' rx='1.5' fill='none' stroke='%23c9a24e' stroke-width='1.3'/%3E%3Crect x='6' y='24' width='12' height='6' rx='1.5' fill='none' stroke='%23c9a24e' stroke-width='1.3'/%3E%3Crect x='22' y='24' width='12' height='6' rx='1.5' fill='none' stroke='%23c9a24e' stroke-width='1.3'/%3E%3Cline x1='0' y1='0.5' x2='40' y2='0.5' stroke='%23c9a24e' stroke-width='1'/%3E%3Cline x1='0' y1='33.5' x2='40' y2='33.5' stroke='%23c9a24e' stroke-width='1'/%3E%3C/svg%3E") repeat-x center;
 }
