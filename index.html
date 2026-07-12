@@ -29,25 +29,16 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video" autoplay muted loop playsinline
+    <section class="hero">
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline
              poster="assets/images/hero-poster.jpg">
         <source src="assets/video/sinefil-fil.mp4" type="video/mp4" />
       </video>
-      <div class="hero-overlay"></div>
-
-      <div class="screen">
-        <div class="screen-grain"></div>
-        <p class="eyebrow">Kişisel sinema arşivi</p>
-        <h1 id="hero-title">Her büyük film,<br>bir seyirci daha hak eder.</h1>
-        <p class="hero-copy">
-          Sessiz sinemadan film noir’a, Kubrick’ten Tarkovski’ye,
-          Scorsese’den Nuri Bilge Ceylan’a uzanan kişisel bir sinema yolculuğu.
-        </p>
-        <a class="primary-button" href="#collections">Salona gir</a>
-      </div>
-
-      <div class="scroll-cue">Aşağı kaydır</div>
+      <button class="sound-toggle" id="soundToggle" aria-label="Sesi aç">
+        <span class="sound-ico" aria-hidden="true">🔊</span>
+        <span class="sound-txt">Sesi aç</span>
+      </button>
+      <a class="scroll-cue" href="#collections">Aşağı kaydır</a>
     </section>
 
     <section class="manifesto section-shell">
