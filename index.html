@@ -17,15 +17,22 @@
       <span>SİNEFİL</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+    <button class="menu-toggle" aria-label="Menü" aria-expanded="false">☰</button>
 
-    <nav class="main-nav" aria-label="Ana menü">
-      <a href="#collections">Koleksiyonlar</a>
-      <a href="#directors">Yönetmenler</a>
-      <a href="#films">Filmler</a>
-      <a href="#scenes">Sahneler</a>
-      <a href="#about">Hakkında</a>
-    </nav>
+    <div class="header-right">
+      <nav class="main-nav" aria-label="Menu">
+        <a href="#collections"><span data-lang="tr">Koleksiyonlar</span><span data-lang="en" hidden>Collections</span><span data-lang="de" hidden>Sammlungen</span></a>
+        <a href="#directors"><span data-lang="tr">Yönetmenler</span><span data-lang="en" hidden>Directors</span><span data-lang="de" hidden>Regisseure</span></a>
+        <a href="#films"><span data-lang="tr">Filmler</span><span data-lang="en" hidden>Films</span><span data-lang="de" hidden>Filme</span></a>
+        <a href="#scenes"><span data-lang="tr">Sahneler</span><span data-lang="en" hidden>Scenes</span><span data-lang="de" hidden>Szenen</span></a>
+        <a href="#about"><span data-lang="tr">Hakkında</span><span data-lang="en" hidden>About</span><span data-lang="de" hidden>Über</span></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-lang="tr">TR</button>
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="de">DE</button>
+      </div>
+    </div>
   </header>
 
   <main id="top">
@@ -38,28 +45,40 @@
         <span class="sound-ico" aria-hidden="true">🔊</span>
         <span class="sound-txt">Sesi aç</span>
       </button>
-      <a class="scroll-cue" href="#collections">Aşağı kaydır</a>
+      <a class="scroll-cue" href="#collections" data-lang="tr">Aşağı kaydır</a><a class="scroll-cue" href="#collections" data-lang="en" hidden>Scroll down</a><a class="scroll-cue" href="#collections" data-lang="de" hidden>Nach unten scrollen</a>
     </section>
 
     <section class="manifesto section-shell">
-      <p class="section-kicker">Sinefil’in koltuğu</p>
-      <blockquote>
+      <p class="section-kicker" data-lang="tr">Sinefil’in koltuğu</p><p class="section-kicker" data-lang="en" hidden>Sinefil's seat</p><p class="section-kicker" data-lang="de" hidden>Sinefils Sessel</p>
+      <blockquote data-lang="tr">
         “Burada filmler puanlanmaz; hatırlanır, yeniden görülür ve konuşulur.”
+      </blockquote><blockquote data-lang="en" hidden>
+        “Here films are not rated; they are remembered, revisited and talked about.”
+      </blockquote><blockquote data-lang="de" hidden>
+        „Hier werden Filme nicht bewertet; sie werden erinnert, wiedergesehen und besprochen.“
       </blockquote>
-      <p>
+      <p data-lang="tr">
         Sinefil, bir veri tabanından çok kişisel bir sinema defteridir.
         Sevilen yönetmenleri, filmleri, sahneleri, renkleri, sesleri ve
         seyir anılarını bir araya getirir.
+      </p><p data-lang="en" hidden>
+        Sinefil is less a database than a personal cinema notebook.
+        It brings together beloved directors, films, scenes, colours, sounds
+        and the memories of watching.
+      </p><p data-lang="de" hidden>
+        Sinefil ist weniger eine Datenbank als ein persönliches Kino-Notizbuch.
+        Es versammelt geliebte Regisseure, Filme, Szenen, Farben, Klänge
+        und die Erinnerungen des Zuschauens.
       </p>
     </section>
 
     <section id="collections" class="section-shell">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">Koleksiyonlar</p>
-          <h2>Sinema tarihine açılan kapılar</h2>
+          <p class="section-kicker" data-lang="tr">Koleksiyonlar</p><p class="section-kicker" data-lang="en" hidden>Collections</p><p class="section-kicker" data-lang="de" hidden>Sammlungen</p>
+          <h2 data-lang="tr">Sinema tarihine açılan kapılar</h2><h2 data-lang="en" hidden>Doors onto the history of cinema</h2><h2 data-lang="de" hidden>Türen zur Kinogeschichte</h2>
         </div>
-        <p>Her koleksiyon ayrı bir görsel atmosfere ve anlatı diline sahip olacak.</p>
+        <p data-lang="tr">Her koleksiyon ayrı bir görsel atmosfere ve anlatı diline sahip olacak.</p><p data-lang="en" hidden>Each collection will have its own visual atmosphere and narrative language.</p><p data-lang="de" hidden>Jede Sammlung wird eine eigene visuelle Atmosphäre und Erzählsprache haben.</p>
       </div>
 
       <div class="collection-grid">
@@ -67,29 +86,29 @@
           <span class="card-number">01</span>
           <div>
             <p class="card-label">1895–1929</p>
-            <h3>Sessiz Sinema</h3>
-            <p>Chaplin, Keaton, Murnau, Lang, Eisenstein ve görüntünün saf dili.</p>
-            <a href="collections/silent-cinema.html">Koleksiyonu aç</a>
+            <h3 data-lang="tr">Sessiz Sinema</h3><h3 data-lang="en" hidden>Silent Cinema</h3><h3 data-lang="de" hidden>Stummfilm</h3>
+            <p data-lang="tr">Chaplin, Keaton, Murnau, Lang, Eisenstein ve görüntünün saf dili.</p><p data-lang="en" hidden>Chaplin, Keaton, Murnau, Lang, Eisenstein and the pure language of the image.</p><p data-lang="de" hidden>Chaplin, Keaton, Murnau, Lang, Eisenstein und die reine Sprache des Bildes.</p>
+            <a href="collections/silent-cinema.html" data-lang="tr">Koleksiyonu aç</a><a href="collections/silent-cinema.html" data-lang="en" hidden>Open collection</a><a href="collections/silent-cinema.html" data-lang="de" hidden>Sammlung öffnen</a>
           </div>
         </article>
 
         <article class="collection-card noir">
           <span class="card-number">02</span>
           <div>
-            <p class="card-label">Gölgeler ve suç</p>
+            <p class="card-label" data-lang="tr">Gölgeler ve suç</p><p class="card-label" data-lang="en" hidden>Shadows and crime</p><p class="card-label" data-lang="de" hidden>Schatten und Verbrechen</p>
             <h3>Film Noir</h3>
-            <p>Sunset Boulevard, The Big Sleep, Double Indemnity ve karanlık şehirler.</p>
-            <a href="collections/film-noir.html">Koleksiyonu aç</a>
+            <p data-lang="tr">Sunset Boulevard, The Big Sleep, Double Indemnity ve karanlık şehirler.</p><p data-lang="en" hidden>Sunset Boulevard, The Big Sleep, Double Indemnity and dark cities.</p><p data-lang="de" hidden>Sunset Boulevard, The Big Sleep, Double Indemnity und dunkle Städte.</p>
+            <a href="collections/film-noir.html" data-lang="tr">Koleksiyonu aç</a><a href="collections/film-noir.html" data-lang="en" hidden>Open collection</a><a href="collections/film-noir.html" data-lang="de" hidden>Sammlung öffnen</a>
           </div>
         </article>
 
         <article class="collection-card auteurs">
           <span class="card-number">03</span>
           <div>
-            <p class="card-label">Auteur sineması</p>
-            <h3>Ustalar</h3>
-            <p>Kubrick, Tarkovski, Coppola, Scorsese, Hitchcock ve daha fazlası.</p>
-            <a href="#directors">Yönetmenleri gör</a>
+            <p class="card-label" data-lang="tr">Auteur sineması</p><p class="card-label" data-lang="en" hidden>Auteur cinema</p><p class="card-label" data-lang="de" hidden>Autorenkino</p>
+            <h3 data-lang="tr">Ustalar</h3><h3 data-lang="en" hidden>The Masters</h3><h3 data-lang="de" hidden>Die Meister</h3>
+            <p data-lang="tr">Kubrick, Tarkovski, Coppola, Scorsese, Hitchcock ve daha fazlası.</p><p data-lang="en" hidden>Kubrick, Tarkovsky, Coppola, Scorsese, Hitchcock and more.</p><p data-lang="de" hidden>Kubrick, Tarkowski, Coppola, Scorsese, Hitchcock und mehr.</p>
+            <a href="#directors" data-lang="tr">Yönetmenleri gör</a><a href="#directors" data-lang="en" hidden>See the directors</a><a href="#directors" data-lang="de" hidden>Regisseure ansehen</a>
           </div>
         </article>
       </div>
@@ -99,42 +118,96 @@
       <div class="section-shell">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">Yönetmenler</p>
-            <h2>Sinemanın büyük bakışları</h2>
+            <p class="section-kicker" data-lang="tr">Yönetmenler</p><p class="section-kicker" data-lang="en" hidden>Directors</p><p class="section-kicker" data-lang="de" hidden>Regisseure</p>
+            <h2 data-lang="tr">Sinemanın büyük bakışları</h2><h2 data-lang="en" hidden>The great gazes of cinema</h2><h2 data-lang="de" hidden>Die großen Blicke des Kinos</h2>
           </div>
-          <p>Bu ilk sürümde örnek yönetmen kartları yer alıyor; içerikler kolayca çoğaltılabilir.</p>
+          <p data-lang="tr">Bu ilk sürümde örnek yönetmen kartları yer alıyor; içerikler kolayca çoğaltılabilir.</p><p data-lang="en" hidden>This first version features sample director cards; the content can easily be expanded.</p><p data-lang="de" hidden>Diese erste Version enthält beispielhafte Regisseur-Karten; die Inhalte lassen sich leicht erweitern.</p>
         </div>
 
         <div class="director-grid">
-          <a class="director-card" href="directors/stanley-kubrick.html">
-            <span class="director-year">1928–1999</span>
-            <strong>Stanley<br>Kubrick</strong>
-            <em>Kontrol, simetri, insanlık</em>
+          <a class="win" href="directors/stanley-kubrick.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-kubrick"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#241403" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="#b01319"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1928–1999</span>
+                <strong>Stanley Kubrick</strong>
+                <em data-lang="tr">Kontrol, simetri, insanlık</em><em data-lang="en" hidden>Control, symmetry, humanity</em><em data-lang="de" hidden>Kontrolle, Symmetrie, Menschlichkeit</em>
+              </span>
+            </span>
           </a>
-          <a class="director-card" href="directors/andrei-tarkovsky.html">
-            <span class="director-year">1932–1986</span>
-            <strong>Andrei<br>Tarkovski</strong>
-            <em>Zaman, hafıza, inanç</em>
+          <a class="win" href="directors/andrei-tarkovsky.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-tarkovsky"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5c3.2 3 4.5 5.2 4.5 7.6a4.5 4.5 0 0 1-9 0c0-1.3.6-2.4 1.8-3.4-.3 1.3.4 2.3 1.3 2.7C12 7.6 12 4.8 12 2.5Z" fill="#241403"/><rect x="9.2" y="19" width="5.6" height="2.4" rx="1" fill="#241403"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1932–1986</span>
+                <strong>Andrei Tarkovski</strong>
+                <em data-lang="tr">Zaman, hafıza, inanç</em><em data-lang="en" hidden>Time, memory, faith</em><em data-lang="de" hidden>Zeit, Erinnerung, Glaube</em>
+              </span>
+            </span>
           </a>
-          <a class="director-card" href="directors/alfred-hitchcock.html">
-            <span class="director-year">1899–1980</span>
-            <strong>Alfred<br>Hitchcock</strong>
-            <em>Bakış, gerilim, suç</em>
+          <a class="win" href="directors/alfred-hitchcock.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-hitchcock"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15.5 3c-2.6 0-4.4 1.8-4.8 4-.2 1-1 1.4-1.8 1.8-.9.4-1.4.8-1.4 1.4 0 .5.5.8 1.1.9.5.1.7.4.5.9-.2.7-.8 1.1-.8 1.9 0 .7.8.9 1.4 1.1V21h7.8v-3.3c2.1-1.1 3.3-3.1 3.3-5.9C20.5 6.2 18.7 3 15.5 3Z" fill="#241403"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1899–1980</span>
+                <strong>Alfred Hitchcock</strong>
+                <em data-lang="tr">Bakış, gerilim, suç</em><em data-lang="en" hidden>Gaze, suspense, crime</em><em data-lang="de" hidden>Blick, Spannung, Verbrechen</em>
+              </span>
+            </span>
           </a>
-          <a class="director-card" href="directors/martin-scorsese.html">
-            <span class="director-year">1942–</span>
-            <strong>Martin<br>Scorsese</strong>
-            <em>Şehir, günah, şiddet</em>
+          <a class="win" href="directors/martin-scorsese.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-scorsese"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241403" stroke-width="1.6"><circle cx="7.5" cy="13.5" r="3.3"/><circle cx="16.5" cy="13.5" r="3.3"/><path d="M10.8 13h2.4" stroke-linecap="round"/><path d="M4.2 12.4 2.7 11.4" stroke-linecap="round"/><path d="M19.8 12.4l1.5-1" stroke-linecap="round"/><path d="M4 8.6c1.6-1.1 4.2-1.1 5.8 0" stroke-width="1.9" stroke-linecap="round"/><path d="M14.2 8.6c1.6-1.1 4.2-1.1 5.8 0" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1942–</span>
+                <strong>Martin Scorsese</strong>
+                <em data-lang="tr">Şehir, günah, şiddet</em><em data-lang="en" hidden>City, sin, violence</em><em data-lang="de" hidden>Stadt, Sünde, Gewalt</em>
+              </span>
+            </span>
           </a>
-          <a class="director-card" href="directors/francis-ford-coppola.html">
-            <span class="director-year">1939–</span>
-            <strong>Francis Ford<br>Coppola</strong>
-            <em>Aile, iktidar, trajedi</em>
+          <a class="win" href="directors/francis-ford-coppola.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-coppola"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#241403" stroke-width="1.5" stroke-linecap="round"><path d="M4 6.5h16"/><path d="M12 6.5v3"/><path d="M6 6.5 7.4 19"/><path d="M12 9.5V19"/><path d="M18 6.5 16.6 19"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1939–</span>
+                <strong>Francis Ford Coppola</strong>
+                <em data-lang="tr">Aile, iktidar, trajedi</em><em data-lang="en" hidden>Family, power, tragedy</em><em data-lang="de" hidden>Familie, Macht, Tragödie</em>
+              </span>
+            </span>
           </a>
-          <a class="director-card" href="directors/nuri-bilge-ceylan.html">
-            <span class="director-year">1959–</span>
-            <strong>Nuri Bilge<br>Ceylan</strong>
-            <em>Taşra, sessizlik, insan</em>
+          <a class="win" href="directors/nuri-bilge-ceylan.html">
+            <span class="win-frame">
+              <span class="win-glass">
+                <span class="win-view view-ceylan"></span>
+                <span class="win-grille"></span>
+              </span>
+              <span class="win-emblem" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21v-6.5" stroke="#241403" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M12 15c-3.2 0-5.3-2-5.3-4.8C6.7 6.8 9.2 4 12 4s5.3 2.8 5.3 6.2C17.3 13 15.2 15 12 15Z" fill="#241403"/><path d="M5.5 21h13" stroke="#241403" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg></span>
+              <span class="win-plate">
+                <span class="director-year">1959–</span>
+                <strong>Nuri Bilge Ceylan</strong>
+                <em data-lang="tr">Taşra, sessizlik, insan</em><em data-lang="en" hidden>Province, silence, humanity</em><em data-lang="de" hidden>Provinz, Stille, Mensch</em>
+              </span>
+            </span>
           </a>
         </div>
       </div>
@@ -143,10 +216,10 @@
     <section id="films" class="section-shell films-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">Seçili filmler</p>
-          <h2>Filin defterinden</h2>
+          <p class="section-kicker" data-lang="tr">Seçili filmler</p><p class="section-kicker" data-lang="en" hidden>Selected films</p><p class="section-kicker" data-lang="de" hidden>Ausgewählte Filme</p>
+          <h2 data-lang="tr">Filin defterinden</h2><h2 data-lang="en" hidden>From the elephant's notebook</h2><h2 data-lang="de" hidden>Aus dem Notizbuch des Elefanten</h2>
         </div>
-        <p>Poster yerine tipografi ve atmosfer kullanan telif açısından güvenli örnek kartlar.</p>
+        <p data-lang="tr">Poster yerine tipografi ve atmosfer kullanan telif açısından güvenli örnek kartlar.</p><p data-lang="en" hidden>Copyright-safe sample cards that use typography and atmosphere instead of posters.</p><p data-lang="de" hidden>Urheberrechtlich unbedenkliche Beispielkarten, die Typografie und Atmosphäre statt Plakaten verwenden.</p>
       </div>
 
       <div class="film-grid">
@@ -188,35 +261,56 @@
     <section id="scenes" class="scenes-section">
       <div class="scene-image" role="img" aria-label="Kırmızı koltuklu boş sinema salonu"></div>
       <div class="scene-copy">
-        <p class="section-kicker">Unutulmaz sahneler</p>
-        <h2>Bir filmin içinde kalan an</h2>
-        <p>
+        <p class="section-kicker" data-lang="tr">Unutulmaz sahneler</p><p class="section-kicker" data-lang="en" hidden>Unforgettable scenes</p><p class="section-kicker" data-lang="de" hidden>Unvergessliche Szenen</p>
+        <h2 data-lang="tr">Bir filmin içinde kalan an</h2><h2 data-lang="en" hidden>A moment held inside a film</h2><h2 data-lang="de" hidden>Ein Augenblick, der im Film bleibt</h2>
+        <p data-lang="tr">
           Her sahne sayfasında görüntü kompozisyonu, kamera hareketi, ses,
           kurgu, oyunculuk ve kişisel izlenim için ayrı alanlar bulunacak.
+        </p><p data-lang="en" hidden>
+          Each scene page will have separate sections for image composition, camera
+          movement, sound, editing, acting and personal impression.
+        </p><p data-lang="de" hidden>
+          Jede Szenenseite wird eigene Bereiche für Bildkomposition, Kamerabewegung,
+          Ton, Schnitt, Schauspiel und persönlichen Eindruck haben.
         </p>
         <div class="scene-list">
-          <span>2001 — Docking Sequence</span>
-          <span>Stalker — Raylar üzerindeki yolculuk</span>
-          <span>Rear Window — Açılış sekansı</span>
-          <span>Once Upon a Time in America — Telefon sesi</span>
+          <span data-lang="tr">2001 — Docking Sequence</span><span data-lang="en" hidden>2001 — Docking Sequence</span><span data-lang="de" hidden>2001 — Docking Sequence</span>
+          <span data-lang="tr">Stalker — Raylar üzerindeki yolculuk</span><span data-lang="en" hidden>Stalker — The journey along the rails</span><span data-lang="de" hidden>Stalker — Die Reise über die Schienen</span>
+          <span data-lang="tr">Rear Window — Açılış sekansı</span><span data-lang="en" hidden>Rear Window — The opening sequence</span><span data-lang="de" hidden>Rear Window — Die Anfangssequenz</span>
+          <span data-lang="tr">Once Upon a Time in America — Telefon sesi</span><span data-lang="en" hidden>Once Upon a Time in America — The ringing telephone</span><span data-lang="de" hidden>Once Upon a Time in America — Das Läuten des Telefons</span>
         </div>
       </div>
     </section>
 
     <section id="about" class="about-section section-shell">
       <div>
-        <p class="section-kicker">Hakkında</p>
-        <h2>Sinefil ne demek?</h2>
+        <p class="section-kicker" data-lang="tr">Hakkında</p><p class="section-kicker" data-lang="en" hidden>About</p><p class="section-kicker" data-lang="de" hidden>Über</p>
+        <h2 data-lang="tr">Sinefil ne demek?</h2><h2 data-lang="en" hidden>What does “Sinefil” mean?</h2><h2 data-lang="de" hidden>Was bedeutet „Sinefil“?</h2>
       </div>
       <div class="about-copy">
-        <p>
+        <p data-lang="tr">
           “Sinefil” sinemaya tutkuyla bağlı kişiyi anlatır. Bu projede sözcük,
           Türkçedeki “sinema” ve “fil” çağrışımıyla yeniden yorumlanıyor:
           karanlık bir salonda, en sevdiği filmi tek başına izleyen bir fil.
+        </p><p data-lang="en" hidden>
+          “Sinefil” describes someone passionately devoted to cinema. In this project the
+          word is reinterpreted through its echo of the Turkish words “sinema” and “fil”
+          (elephant): an elephant watching its favourite film alone in a dark auditorium.
+        </p><p data-lang="de" hidden>
+          „Sinefil“ bezeichnet einen leidenschaftlich dem Kino verbundenen Menschen. In
+          diesem Projekt wird das Wort durch den Anklang an die türkischen Wörter „sinema“
+          und „fil“ (Elefant) neu gedeutet: ein Elefant, der in einem dunklen Saal allein
+          seinen Lieblingsfilm ansieht.
         </p>
-        <p>
+        <p data-lang="tr">
           Repo; GitHub Pages üzerinde doğrudan yayınlanabilecek biçimde,
           bağımlılıksız HTML, CSS ve küçük bir JavaScript dosyasıyla hazırlanmıştır.
+        </p><p data-lang="en" hidden>
+          The repository is built with dependency-free HTML, CSS and a small JavaScript
+          file, ready to be published directly on GitHub Pages.
+        </p><p data-lang="de" hidden>
+          Das Repository ist mit abhängigkeitsfreiem HTML, CSS und einer kleinen
+          JavaScript-Datei aufgebaut und kann direkt auf GitHub Pages veröffentlicht werden.
         </p>
       </div>
     </section>
@@ -227,10 +321,11 @@
       <span class="brand-mark">S</span>
       <span>SİNEFİL</span>
     </a>
-    <p>Kişisel sinema arşivi · İlk prototip</p>
-    <p>Fotoğraflar: kullanıcı arşivi</p>
+    <p data-lang="tr">Kişisel sinema arşivi · İlk prototip</p><p data-lang="en" hidden>Personal cinema archive · First prototype</p><p data-lang="de" hidden>Persönliches Kinoarchiv · Erster Prototyp</p>
+    <p data-lang="tr">Fotoğraflar: kullanıcı arşivi</p><p data-lang="en" hidden>Photographs: user archive</p><p data-lang="de" hidden>Fotografien: Nutzerarchiv</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>

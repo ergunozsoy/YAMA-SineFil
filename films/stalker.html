@@ -19,22 +19,58 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Film</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Film</p>
+      <p class="section-kicker" data-lang="en" hidden>Film</p>
+      <p class="section-kicker" data-lang="de" hidden>Film</p>
       <h1>Stalker</h1>
       <p class="detail-meta">1979 · Andrei Tarkovski</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Strugatski kardeşlerin romanından yola çıkan Tarkovski, bir bilimkurgu öncülünü metafizik hac yolculuğuna çevirir: Bölge'nin kalbindeki Oda, girenin en derin dileğini gerçekleştirir — ama insan en derin dileğiyle yüzleşmeye hazır mıdır? Zorlu bir çekim sürecinden geçti; ilk çekilen negatifler kullanılamayınca film büyük ölçüde yeniden çekildi.</p>
-    <h2>Neden önemli?</h2>
-    <p>Üç adamın — Yazar, Profesör, İz Sürücü — yolculuğu, akıl ile iman, bilgi ile umut arasındaki modern insanın haritasıdır. Sepya dünyadan Bölge'nin renklerine geçiş, Oz'a değil vicdana açılan bir kapıdır. Sinemanın en yavaş ve en dolu 160 dakikalarından.</p>
-    <h2>İzlerken dikkat</h2>
-    <ul><li>Raylı vagon sekansı: hipnotik ritim, geçiş ayini gibi</li><li>Su sesleri ve endüstriyel yankılar — ses tasarımı ayrı bir karakter</li><li>Renk paleti: sepya (dış dünya) ile soluk yeşil (Bölge) arasındaki eşik</li><li>Uzun planlarda kameranın fark ettirmeden süzülüşü</li><li>Finaldeki kız çocuğu: mucize mi, mutasyon mu — film cevap vermez</li></ul>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="lede" data-lang="tr">Strugatski kardeşlerin romanından yola çıkan Tarkovski, bir bilimkurgu öncülünü metafizik hac yolculuğuna çevirir: Bölge'nin kalbindeki Oda, girenin en derin dileğini gerçekleştirir — ama insan en derin dileğiyle yüzleşmeye hazır mıdır? Zorlu bir çekim sürecinden geçti; ilk çekilen negatifler kullanılamayınca film büyük ölçüde yeniden çekildi.</p>
+    <p class="lede" data-lang="en" hidden>Departing from the Strugatski brothers' novel, Tarkovski turns a science-fiction premise into a metaphysical pilgrimage: the Room at the heart of the Zone grants whoever enters their deepest wish — but is a person ever ready to face their deepest wish? The production was gruelling; when the first negatives proved unusable, the film was largely reshot.</p>
+    <p class="lede" data-lang="de" hidden>Ausgehend vom Roman der Brüder Strugatski verwandelt Tarkovski eine Science-Fiction-Prämisse in eine metaphysische Pilgerfahrt: Der Raum im Herzen der Zone erfüllt dem Eintretenden seinen tiefsten Wunsch — doch ist der Mensch je bereit, seinem tiefsten Wunsch ins Auge zu sehen? Die Dreharbeiten waren beschwerlich; als das zuerst belichtete Negativmaterial unbrauchbar war, wurde der Film weitgehend neu gedreht.</p>
+    <h2 data-lang="tr">Neden önemli?</h2>
+    <h2 data-lang="en" hidden>Why it matters</h2>
+    <h2 data-lang="de" hidden>Warum es wichtig ist</h2>
+    <p data-lang="tr">Üç adamın — Yazar, Profesör, İz Sürücü — yolculuğu, akıl ile iman, bilgi ile umut arasındaki modern insanın haritasıdır. Sepya dünyadan Bölge'nin renklerine geçiş, Oz'a değil vicdana açılan bir kapıdır. Sinemanın en yavaş ve en dolu 160 dakikalarından.</p>
+    <p data-lang="en" hidden>The journey of three men — the Writer, the Professor, the Stalker — is a map of modern humanity poised between reason and faith, knowledge and hope. The passage from the sepia world into the colours of the Zone is a door that opens not onto Oz but onto conscience. Among cinema's slowest and fullest 160 minutes.</p>
+    <p data-lang="de" hidden>Die Reise dreier Männer — des Schriftstellers, des Professors, des Stalkers — ist eine Landkarte des modernen Menschen zwischen Vernunft und Glaube, Wissen und Hoffnung. Der Übergang von der sepiafarbenen Welt in die Farben der Zone ist eine Tür, die sich nicht nach Oz, sondern zum Gewissen öffnet. Es sind unter den langsamsten und zugleich erfülltesten 160 Minuten des Kinos.</p>
+    <h2 data-lang="tr">İzlerken dikkat</h2>
+    <h2 data-lang="en" hidden>What to watch for</h2>
+    <h2 data-lang="de" hidden>Worauf man achten sollte</h2>
+    <ul data-lang="tr"><li>Raylı vagon sekansı: hipnotik ritim, geçiş ayini gibi</li><li>Su sesleri ve endüstriyel yankılar — ses tasarımı ayrı bir karakter</li><li>Renk paleti: sepya (dış dünya) ile soluk yeşil (Bölge) arasındaki eşik</li><li>Uzun planlarda kameranın fark ettirmeden süzülüşü</li><li>Finaldeki kız çocuğu: mucize mi, mutasyon mu — film cevap vermez</li></ul>
+    <ul data-lang="en" hidden><li>The rail-trolley sequence: a hypnotic rhythm, like a rite of passage</li><li>Water sounds and industrial echoes — the sound design is a character in its own right</li><li>The colour palette: the threshold between sepia (the outside world) and pale green (the Zone)</li><li>The camera's imperceptible gliding through the long takes</li><li>The little girl in the finale: miracle or mutation — the film gives no answer</li></ul>
+    <ul data-lang="de" hidden><li>Die Draisinen-Sequenz: ein hypnotischer Rhythmus, wie ein Übergangsritus</li><li>Wassergeräusche und industrielle Echos — das Sounddesign ist eine eigene Figur</li><li>Die Farbpalette: die Schwelle zwischen Sepia (die Außenwelt) und blassem Grün (die Zone)</li><li>Das unmerkliche Gleiten der Kamera in den langen Einstellungen</li><li>Das kleine Mädchen im Finale: Wunder oder Mutation — der Film gibt keine Antwort</li></ul>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="notlar" data-lang="en" hidden>Space for personal impressions of this film, scene notes and rewatch dates.</p>
+    <p class="notlar" data-lang="de" hidden>Raum für persönliche Eindrücke zu diesem Film, Szenennotizen und Wiedersichtungsdaten.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="2001-a-space-odyssey.html" data-lang="tr"><span>← Önceki</span><strong>2001: A Space Odyssey</strong></a>
+    <a class="pn-prev" href="2001-a-space-odyssey.html" data-lang="en" hidden><span>← Previous</span><strong>2001: A Space Odyssey</strong></a>
+    <a class="pn-prev" href="2001-a-space-odyssey.html" data-lang="de" hidden><span>← Zurück</span><strong>2001: A Space Odyssey</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="sunset-boulevard.html" data-lang="tr"><span>Sonraki →</span><strong>Sunset Boulevard</strong></a>
+    <a class="pn-next" href="sunset-boulevard.html" data-lang="en" hidden><span>Next →</span><strong>Sunset Boulevard</strong></a>
+    <a class="pn-next" href="sunset-boulevard.html" data-lang="de" hidden><span>Weiter →</span><strong>Sunset Boulevard</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

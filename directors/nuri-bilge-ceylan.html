@@ -19,24 +19,58 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Nuri Bilge Ceylan</h1>
       <p class="detail-meta">1959–</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Fotoğrafçılıktan gelen gözüyle Türkiye taşrasını dünya sinemasının haritasına yerleştirdi. Çehov'un hikâye dünyasını Anadolu bozkırına taşır: konuşan ama anlaşamayan insanlar, uzayan sessizlikler, vicdanla gurur arasındaki ince hesaplaşmalar. Cannes'ın müdavimi; Kış Uykusu ile 2014 Altın Palmiye sahibi.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Uzun diyalog sahneleri — söylenenle söylenmeyen arasındaki uçurum</li><li>Bozkır, kar ve kasaba ışığı: manzara ruh hâlidir</li><li>Amatör ve akraba oyuncularla başlayan, ustalaşan bir oyuncu yönetimi</li><li>Dijital görüntünün ressamca kullanımı; her plan bir fotoğraf</li><li>Çehov, Dostoyevski ve yerli hikâyenin sessiz sentezi</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>2002</strong> — Uzak</li><li><strong>2006</strong> — İklimler</li><li><strong>2008</strong> — Üç Maymun</li><li><strong>2011</strong> — Bir Zamanlar Anadolu'da</li><li><strong>2014</strong> — Kış Uykusu</li><li><strong>2018</strong> — Ahlat Ağacı</li><li><strong>2023</strong> — Kuru Otlar Üstüne</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Bir Zamanlar Anadolu'da — gecede uzun bir arayış; zirvesi</li><li>Uzak — İstanbul'da iki adam, iki dünya; uluslararası çıkışı</li><li>Kış Uykusu — Kapadokya'da vicdan ve kibir üzerine büyük konuşma</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">Fotoğrafçılıktan gelen gözüyle Türkiye taşrasını dünya sinemasının haritasına yerleştirdi. Çehov'un hikâye dünyasını Anadolu bozkırına taşır: konuşan ama anlaşamayan insanlar, uzayan sessizlikler, vicdanla gurur arasındaki ince hesaplaşmalar. Cannes'ın müdavimi; Kış Uykusu ile 2014 Altın Palmiye sahibi.</p>
+    <p class="lede" data-lang="en" hidden>With an eye schooled in photography, he placed the Turkish provinces on the map of world cinema. He carries Chekhov's world of stories to the Anatolian steppe: people who speak yet fail to understand one another, silences that stretch on, the fine reckonings between conscience and pride. A Cannes regular; winner of the 2014 Palme d'Or with Kış Uykusu.</p>
+    <p class="lede" data-lang="de" hidden>Mit einem in der Fotografie geschulten Blick setzte er die türkische Provinz auf die Landkarte des Weltkinos. Er trägt Tschechows Erzählwelt in die anatolische Steppe: Menschen, die reden und sich doch nicht verstehen, sich dehnende Stillen, die feinen Abrechnungen zwischen Gewissen und Stolz. Ein Stammgast in Cannes; mit Kış Uykusu Gewinner der Goldenen Palme 2014.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Uzun diyalog sahneleri — söylenenle söylenmeyen arasındaki uçurum</li><li>Bozkır, kar ve kasaba ışığı: manzara ruh hâlidir</li><li>Amatör ve akraba oyuncularla başlayan, ustalaşan bir oyuncu yönetimi</li><li>Dijital görüntünün ressamca kullanımı; her plan bir fotoğraf</li><li>Çehov, Dostoyevski ve yerli hikâyenin sessiz sentezi</li></ul>
+    <ul data-lang="en" hidden><li>Long dialogue scenes — the chasm between what is said and what is left unsaid</li><li>Steppe, snow and small-town light: landscape as a state of mind</li><li>A direction of actors that begins with amateurs and relatives and matures into mastery</li><li>A painterly use of the digital image; every shot a photograph</li><li>The quiet synthesis of Chekhov, Dostoevsky and the native tale</li></ul>
+    <ul data-lang="de" hidden><li>Lange Dialogszenen — der Abgrund zwischen dem Gesagten und dem Ungesagten</li><li>Steppe, Schnee und Kleinstadtlicht: die Landschaft ist ein Seelenzustand</li><li>Eine Schauspielführung, die mit Laien und Verwandten beginnt und zur Meisterschaft reift</li><li>Der malerische Umgang mit dem digitalen Bild; jede Einstellung eine Fotografie</li><li>Die stille Synthese aus Tschechow, Dostojewski und der einheimischen Erzählung</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>2002</strong> — Uzak</li><li><strong>2006</strong> — İklimler</li><li><strong>2008</strong> — Üç Maymun</li><li><strong>2011</strong> — Bir Zamanlar Anadolu'da</li><li><strong>2014</strong> — Kış Uykusu</li><li><strong>2018</strong> — Ahlat Ağacı</li><li><strong>2023</strong> — Kuru Otlar Üstüne</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>2002</strong> — Uzak</li><li><strong>2006</strong> — İklimler</li><li><strong>2008</strong> — Üç Maymun</li><li><strong>2011</strong> — Bir Zamanlar Anadolu'da</li><li><strong>2014</strong> — Kış Uykusu</li><li><strong>2018</strong> — Ahlat Ağacı</li><li><strong>2023</strong> — Kuru Otlar Üstüne</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>2002</strong> — Uzak</li><li><strong>2006</strong> — İklimler</li><li><strong>2008</strong> — Üç Maymun</li><li><strong>2011</strong> — Bir Zamanlar Anadolu'da</li><li><strong>2014</strong> — Kış Uykusu</li><li><strong>2018</strong> — Ahlat Ağacı</li><li><strong>2023</strong> — Kuru Otlar Üstüne</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Bir Zamanlar Anadolu'da — gecede uzun bir arayış; zirvesi</li><li>Uzak — İstanbul'da iki adam, iki dünya; uluslararası çıkışı</li><li>Kış Uykusu — Kapadokya'da vicdan ve kibir üzerine büyük konuşma</li></ol>
+    <ol data-lang="en" hidden><li>Bir Zamanlar Anadolu'da — a long search across a single night; his summit</li><li>Uzak — two men, two worlds in İstanbul; his international breakthrough</li><li>Kış Uykusu — a grand disquisition on conscience and pride in Cappadocia</li></ol>
+    <ol data-lang="de" hidden><li>Bir Zamanlar Anadolu'da — eine lange Suche durch eine einzige Nacht; sein Gipfel</li><li>Uzak — zwei Männer, zwei Welten in İstanbul; sein internationaler Durchbruch</li><li>Kış Uykusu — eine große Abhandlung über Gewissen und Hochmut in Kappadokien</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space set aside for personal notes, scene analyses and a viewing diary — one line with each rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — eine Zeile bei jedem erneuten Sehen.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="francis-ford-coppola.html"><span><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span></span><strong>Francis Ford Coppola</strong></a>
+    <a class="pn-home" href="../index.html"><span data-lang="tr">Sinefil ana sayfa</span><span data-lang="en" hidden>Sinefil home</span><span data-lang="de" hidden>Sinefil-Startseite</span></a>
+    <a class="pn-next" href="stanley-kubrick.html"><span><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span></span><strong>Stanley Kubrick</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

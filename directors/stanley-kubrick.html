@@ -19,24 +19,60 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Stanley Kubrick</h1>
       <p class="detail-meta">1928–1999</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">New York'lu bir fotoğrafçı olarak başladı; sinemayı, her karesi hesaplanmış bir düşünce makinesine dönüştürdü. Türden türe atlar — savaş, bilimkurgu, korku, dönem filmi — ama her seferinde aynı soruyu sorar: akıl ile şiddet arasında sıkışan insan nedir? Mükemmeliyetçiliği efsanedir; tek bir sahne için onlarca tekrar çektirdiği olur.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Tek nokta perspektifi ve simetrik kadraj — koridorlar, yüzler, kaderler hep merkezde</li><li>Var olan müziğin (Strauss, Ligeti, Beethoven) görüntüyle çarpıcı montajı</li><li>Geniş açı lensler ve soğuk, mesafeli bakış; duygu yerine düşünce üretir</li><li>'Kubrick bakışı': öne eğik başın altından kameraya dikilen gözler</li><li>Doğal ışık tutkusu — Barry Lyndon'da mum ışığıyla çekim için NASA lensi</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>1957</strong> — Paths of Glory / Zafer Yolları</li><li><strong>1964</strong> — Dr. Strangelove</li><li><strong>1968</strong> — 2001: A Space Odyssey</li><li><strong>1971</strong> — A Clockwork Orange / Otomatik Portakal</li><li><strong>1975</strong> — Barry Lyndon</li><li><strong>1980</strong> — The Shining / Cinnet</li><li><strong>1987</strong> — Full Metal Jacket</li><li><strong>1999</strong> — Eyes Wide Shut</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Dr. Strangelove — mizahıyla en 'kolay' Kubrick, ama dehşeti tam</li><li>2001 — büyük ekranda, sabırla; sinemanın sınır taşı</li><li>Barry Lyndon — her karesi tablo; olgunluk dönemi zirvesi</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">New York'lu bir fotoğrafçı olarak başladı; sinemayı, her karesi hesaplanmış bir düşünce makinesine dönüştürdü. Türden türe atlar — savaş, bilimkurgu, korku, dönem filmi — ama her seferinde aynı soruyu sorar: akıl ile şiddet arasında sıkışan insan nedir? Mükemmeliyetçiliği efsanedir; tek bir sahne için onlarca tekrar çektirdiği olur.</p>
+    <p class="lede" data-lang="en" hidden>He began as a New York photographer and turned cinema into a thinking machine in which every frame is calculated. He leaps from genre to genre — war, science fiction, horror, period piece — yet each time poses the same question: what is the human being, caught between reason and violence? His perfectionism is the stuff of legend; he has been known to demand dozens of takes for a single scene.</p>
+    <p class="lede" data-lang="de" hidden>Er begann als Fotograf in New York und verwandelte das Kino in eine Denkmaschine, in der jedes Einzelbild durchkalkuliert ist. Er springt von Genre zu Genre — Krieg, Science-Fiction, Horror, Historienfilm — und stellt doch jedes Mal dieselbe Frage: Was ist der Mensch, eingeklemmt zwischen Vernunft und Gewalt? Sein Perfektionismus ist legendär; für eine einzige Szene ließ er mitunter Dutzende Takes drehen.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Tek nokta perspektifi ve simetrik kadraj — koridorlar, yüzler, kaderler hep merkezde</li><li>Var olan müziğin (Strauss, Ligeti, Beethoven) görüntüyle çarpıcı montajı</li><li>Geniş açı lensler ve soğuk, mesafeli bakış; duygu yerine düşünce üretir</li><li>'Kubrick bakışı': öne eğik başın altından kameraya dikilen gözler</li><li>Doğal ışık tutkusu — Barry Lyndon'da mum ışığıyla çekim için NASA lensi</li></ul>
+    <ul data-lang="en" hidden><li>One-point perspective and symmetrical framing — corridors, faces, fates always at the centre</li><li>The striking montage of existing music (Strauss, Ligeti, Beethoven) against the image</li><li>Wide-angle lenses and a cold, distanced gaze; it produces thought rather than emotion</li><li>The 'Kubrick stare': eyes fixed on the camera from beneath a lowered head</li><li>A passion for natural light — a NASA lens to shoot by candlelight in Barry Lyndon</li></ul>
+    <ul data-lang="de" hidden><li>Zentralperspektive und symmetrische Bildkomposition — Korridore, Gesichter, Schicksale stets im Zentrum</li><li>Die frappierende Montage vorhandener Musik (Strauss, Ligeti, Beethoven) mit dem Bild</li><li>Weitwinkelobjektive und ein kühler, distanzierter Blick; er erzeugt Gedanken statt Gefühle</li><li>Der 'Kubrick-Blick': Augen, die unter gesenktem Kopf hervor in die Kamera starren</li><li>Leidenschaft für natürliches Licht — in Barry Lyndon ein NASA-Objektiv, um bei Kerzenlicht zu drehen</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>1957</strong> — Paths of Glory / Zafer Yolları</li><li><strong>1964</strong> — Dr. Strangelove</li><li><strong>1968</strong> — 2001: A Space Odyssey</li><li><strong>1971</strong> — A Clockwork Orange / Otomatik Portakal</li><li><strong>1975</strong> — Barry Lyndon</li><li><strong>1980</strong> — The Shining / Cinnet</li><li><strong>1987</strong> — Full Metal Jacket</li><li><strong>1999</strong> — Eyes Wide Shut</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>1957</strong> — Paths of Glory / Zafer Yolları</li><li><strong>1964</strong> — Dr. Strangelove</li><li><strong>1968</strong> — 2001: A Space Odyssey</li><li><strong>1971</strong> — A Clockwork Orange / Otomatik Portakal</li><li><strong>1975</strong> — Barry Lyndon</li><li><strong>1980</strong> — The Shining / Cinnet</li><li><strong>1987</strong> — Full Metal Jacket</li><li><strong>1999</strong> — Eyes Wide Shut</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>1957</strong> — Paths of Glory / Zafer Yolları</li><li><strong>1964</strong> — Dr. Strangelove</li><li><strong>1968</strong> — 2001: A Space Odyssey</li><li><strong>1971</strong> — A Clockwork Orange / Otomatik Portakal</li><li><strong>1975</strong> — Barry Lyndon</li><li><strong>1980</strong> — The Shining / Cinnet</li><li><strong>1987</strong> — Full Metal Jacket</li><li><strong>1999</strong> — Eyes Wide Shut</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Dr. Strangelove — mizahıyla en 'kolay' Kubrick, ama dehşeti tam</li><li>2001 — büyük ekranda, sabırla; sinemanın sınır taşı</li><li>Barry Lyndon — her karesi tablo; olgunluk dönemi zirvesi</li></ol>
+    <ol data-lang="en" hidden><li>Dr. Strangelove — with its humour the 'easiest' Kubrick, yet its dread complete</li><li>2001 — on the big screen, with patience; a landmark of cinema</li><li>Barry Lyndon — every frame a painting; the summit of his mature period</li></ol>
+    <ol data-lang="de" hidden><li>Dr. Strangelove — mit seinem Humor der 'einfachste' Kubrick, doch von vollem Schrecken</li><li>2001 — auf großer Leinwand, mit Geduld; ein Meilenstein des Kinos</li><li>Barry Lyndon — jedes Einzelbild ein Gemälde; der Gipfel seiner reifen Schaffensphase</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space set aside for personal notes, scene analyses and a viewing diary — one line with every rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — eine Zeile bei jedem erneuten Sehen.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="nuri-bilge-ceylan.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Nuri Bilge Ceylan</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="andrei-tarkovsky.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Andrei Tarkovski</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

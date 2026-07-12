@@ -19,22 +19,58 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Film</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Film</p>
+      <p class="section-kicker" data-lang="en" hidden>Film</p>
+      <p class="section-kicker" data-lang="de" hidden>Film</p>
       <h1>Bir Zamanlar Anadolu’da</h1>
       <p class="detail-meta">2011 · Nuri Bilge Ceylan</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Bir cinayetin cesedini arayan konvoy — savcı, doktor, komiser, zanlı — bozkırda gece boyunca tepe tepe dolaşır. Ceylan, polisiye iskeletini alır ve içini insan doğası, taşra bürokrasisi ve vicdan muhasebesiyle doldurur. 2011 Cannes'da Jüri Büyük Ödülü'nü aldı.</p>
-    <h2>Neden önemli?</h2>
-    <p>Türk sinemasının uluslararası kanondaki en sağlam yapıtlarından: gece sahnelerinin ışığı (araba farları, gaz lambası), Çehovvari diyaloglar ve 'muhtarın kızı' sahnesindeki mucizevi an, filmi bir arayış hikâyesinden varoluş meditasyonuna yükseltir. Rehberlik eden soru: gerçeği bulmak mı, onunla yaşamak mı zordur?</p>
-    <h2>İzlerken dikkat</h2>
-    <ul><li>Açılış: yağmurlu camın ardındaki üç adam — her şey bu belirsizlikte saklı</li><li>Far ışığında yuvarlanan elma: dakikalarca süren, anlam yüklü bir doğa planı</li><li>Gaz lambasıyla aydınlanan yüzler: karanlıkta beliren güzellik ve utanç</li><li>Doktor ile savcının araba sohbetleri: filmin gizli omurgası</li><li>Final otopsisi: söylenmeyenin sesi — kesme ve bakışlarla anlatım</li></ul>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="lede" data-lang="tr">Bir cinayetin cesedini arayan konvoy — savcı, doktor, komiser, zanlı — bozkırda gece boyunca tepe tepe dolaşır. Ceylan, polisiye iskeletini alır ve içini insan doğası, taşra bürokrasisi ve vicdan muhasebesiyle doldurur. 2011 Cannes'da Jüri Büyük Ödülü'nü aldı.</p>
+    <p class="lede" data-lang="en" hidden>A convoy searching for a murder victim's body — a prosecutor, a doctor, a police chief, a suspect — wanders the steppe from hilltop to hilltop through the night. Ceylan takes the skeleton of a police procedural and fills it with human nature, provincial bureaucracy and the reckoning of conscience. It won the Grand Prix of the Jury at Cannes in 2011.</p>
+    <p class="lede" data-lang="de" hidden>Ein Konvoi auf der Suche nach der Leiche eines Mordopfers — ein Staatsanwalt, ein Arzt, ein Kommissar, ein Verdächtiger — zieht die ganze Nacht über von Hügel zu Hügel durch die Steppe. Ceylan nimmt das Gerüst eines Kriminalfilms und füllt es mit menschlicher Natur, provinzieller Bürokratie und der Abrechnung des Gewissens. 2011 gewann der Film in Cannes den Großen Preis der Jury.</p>
+    <h2 data-lang="tr">Neden önemli?</h2>
+    <h2 data-lang="en" hidden>Why it matters</h2>
+    <h2 data-lang="de" hidden>Warum es wichtig ist</h2>
+    <p data-lang="tr">Türk sinemasının uluslararası kanondaki en sağlam yapıtlarından: gece sahnelerinin ışığı (araba farları, gaz lambası), Çehovvari diyaloglar ve 'muhtarın kızı' sahnesindeki mucizevi an, filmi bir arayış hikâyesinden varoluş meditasyonuna yükseltir. Rehberlik eden soru: gerçeği bulmak mı, onunla yaşamak mı zordur?</p>
+    <p data-lang="en" hidden>One of the sturdiest works of Turkish cinema in the international canon: the light of the night scenes (car headlights, a gas lamp), the Chekhovian dialogue and the miraculous moment in the 'muhtar's daughter' scene lift the film from a tale of searching into a meditation on existence. The guiding question: is it harder to find the truth, or to live with it?</p>
+    <p data-lang="de" hidden>Eines der beständigsten Werke des türkischen Kinos im internationalen Kanon: das Licht der Nachtszenen (Autoscheinwerfer, eine Petroleumlampe), die tschechowschen Dialoge und der wundersame Augenblick in der Szene mit der 'Tochter des Dorfvorstehers' erheben den Film von einer Suchgeschichte zu einer Meditation über das Dasein. Die leitende Frage: Ist es schwerer, die Wahrheit zu finden oder mit ihr zu leben?</p>
+    <h2 data-lang="tr">İzlerken dikkat</h2>
+    <h2 data-lang="en" hidden>What to watch for</h2>
+    <h2 data-lang="de" hidden>Worauf man achten sollte</h2>
+    <ul data-lang="tr"><li>Açılış: yağmurlu camın ardındaki üç adam — her şey bu belirsizlikte saklı</li><li>Far ışığında yuvarlanan elma: dakikalarca süren, anlam yüklü bir doğa planı</li><li>Gaz lambasıyla aydınlanan yüzler: karanlıkta beliren güzellik ve utanç</li><li>Doktor ile savcının araba sohbetleri: filmin gizli omurgası</li><li>Final otopsisi: söylenmeyenin sesi — kesme ve bakışlarla anlatım</li></ul>
+    <ul data-lang="en" hidden><li>The opening: three men behind a rain-streaked window — everything is hidden in that ambiguity</li><li>The apple rolling in the headlights: a shot of nature laden with meaning that lasts for minutes</li><li>Faces lit by a gas lamp: beauty and shame emerging out of the darkness</li><li>The car conversations between the doctor and the prosecutor: the film's hidden backbone</li><li>The closing autopsy: the sound of the unspoken — narration through cuts and glances</li></ul>
+    <ul data-lang="de" hidden><li>Die Eröffnung: drei Männer hinter einer verregneten Scheibe — alles verbirgt sich in dieser Ungewissheit</li><li>Der im Scheinwerferlicht rollende Apfel: eine minutenlange, bedeutungsschwere Naturaufnahme</li><li>Von einer Petroleumlampe beleuchtete Gesichter: Schönheit und Scham, die aus dem Dunkel auftauchen</li><li>Die Gespräche im Auto zwischen dem Arzt und dem Staatsanwalt: das verborgene Rückgrat des Films</li><li>Die abschließende Obduktion: der Klang des Unausgesprochenen — Erzählung durch Schnitte und Blicke</li></ul>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="notlar" data-lang="en" hidden>Space for personal impressions of this film, scene notes and rewatch dates.</p>
+    <p class="notlar" data-lang="de" hidden>Raum für persönliche Eindrücke zu diesem Film, Szenennotizen und Wiederansehdaten.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="sunset-boulevard.html" data-lang="tr"><span>← Önceki</span><strong>Sunset Boulevard</strong></a>
+    <a class="pn-prev" href="sunset-boulevard.html" data-lang="en" hidden><span>← Previous</span><strong>Sunset Boulevard</strong></a>
+    <a class="pn-prev" href="sunset-boulevard.html" data-lang="de" hidden><span>← Zurück</span><strong>Sunset Boulevard</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="2001-a-space-odyssey.html" data-lang="tr"><span>Sonraki →</span><strong>2001: A Space Odyssey</strong></a>
+    <a class="pn-next" href="2001-a-space-odyssey.html" data-lang="en" hidden><span>Next →</span><strong>2001: A Space Odyssey</strong></a>
+    <a class="pn-next" href="2001-a-space-odyssey.html" data-lang="de" hidden><span>Weiter →</span><strong>2001: A Space Odyssey</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

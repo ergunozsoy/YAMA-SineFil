@@ -18,18 +18,42 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Koleksiyon</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Koleksiyon</p>
+      <p class="section-kicker" data-lang="en" hidden>Collection</p>
+      <p class="section-kicker" data-lang="de" hidden>Sammlung</p>
       <h1>Film Noir</h1>
       <p class="detail-meta">Gölgeler · suç · şehir</p>
     </div>
   </section>
   <main class="detail-body">
-    <h2>Bu sayfa geliştirmeye hazırdır.</h2>
-    <p>Karanlık sokaklar, ahlaki belirsizlikler ve insan ruhunun gölgeleri.</p>
-    <p>Buraya kişisel notlar, filmografiler, sahne çözümlemeleri, alıntılar ve görseller eklenebilir.</p>
+    <h2 data-lang="tr">Bu sayfa geliştirmeye hazırdır.</h2>
+    <h2 data-lang="en" hidden>This page is ready to be developed.</h2>
+    <h2 data-lang="de" hidden>Diese Seite kann noch ausgebaut werden.</h2>
+    <p data-lang="tr">Karanlık sokaklar, ahlaki belirsizlikler ve insan ruhunun gölgeleri.</p>
+    <p data-lang="en" hidden>Dark streets, moral ambiguity and the shadows of the human soul.</p>
+    <p data-lang="de" hidden>Dunkle Straßen, moralische Ambivalenz und die Schatten der menschlichen Seele.</p>
+    <p data-lang="tr">Buraya kişisel notlar, filmografiler, sahne çözümlemeleri, alıntılar ve görseller eklenebilir.</p>
+    <p data-lang="en" hidden>Personal notes, filmographies, scene analyses, quotations and images can be added here.</p>
+    <p data-lang="de" hidden>Hier lassen sich persönliche Notizen, Filmografien, Szenenanalysen, Zitate und Bilder ergänzen.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="silent-cinema.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Sessiz Sinema</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="silent-cinema.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Sessiz Sinema</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

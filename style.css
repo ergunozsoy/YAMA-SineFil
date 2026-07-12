@@ -12,6 +12,10 @@
 
 * { box-sizing: border-box; }
 
+/* Dil değiştirici: gizli dil sürümleri her zaman gizli kalsın
+   (display:inline-block/flex gibi kurallar [hidden]'ı ezmesin) */
+[hidden] { display: none !important; }
+
 html {
   scroll-behavior: smooth;
   background: var(--bg);
@@ -452,48 +456,183 @@ img, svg { display: block; max-width: 100%; }
   border-bottom: 1px solid currentColor;
 }
 
+/* ===== Movie-palace: auditorium doors ===== */
 .directors-section {
-  background: var(--paper);
-  color: #17130f;
+  position: relative;
+  color: var(--paper);
+  background:
+    radial-gradient(ellipse at 50% -8%, rgba(163,15,25,.30), transparent 62%),
+    linear-gradient(180deg, #1c0e0c 0%, #0b0605 100%);
+}
+
+/* faint damask/carpet texture on the lobby wall */
+.directors-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .5;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(0,0,0,.35) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(0deg, rgba(201,162,78,.05) 0 1px, transparent 1px 30px);
 }
 
 .director-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(23,19,15,.2);
-  border-left: 1px solid rgba(23,19,15,.2);
+  gap: clamp(22px, 3vw, 46px);
+  perspective: 1800px;
 }
 
-.director-card {
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 28px;
-  border-right: 1px solid rgba(23,19,15,.2);
-  border-bottom: 1px solid rgba(23,19,15,.2);
-  transition: background .25s ease, color .25s ease;
+.win {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4.3;
+  color: #f4e9d2;
+  transition: transform .45s ease;
 }
 
-.director-card:hover {
-  background: #17130f;
-  color: var(--paper);
+.win:hover { transform: translateY(-5px); }
+
+/* golden arched window frame */
+.win-frame {
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 6px 6px / 20% 20% 3px 3px;
+  background: linear-gradient(180deg, #3a2a12, #211507);
+  box-shadow:
+    0 34px 64px rgba(0,0,0,.6),
+    inset 0 0 0 3px #c9a24e,
+    inset 0 0 0 9px #170f05,
+    inset 0 0 0 12px #8a6d2c;
+  overflow: hidden;
 }
 
-.director-card strong {
+/* keystone at the crown of the arch */
+.win-frame::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 26px;
+  background: linear-gradient(180deg, #eccd7c, #9a7a2e);
+  clip-path: polygon(28% 0, 72% 0, 100% 100%, 0 100%);
+  box-shadow: 0 2px 6px rgba(0,0,0,.55);
+  z-index: 6;
+}
+
+/* glass pane */
+.win-glass {
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  right: 18px;
+  bottom: 96px;
+  border-radius: 46% 46% 3px 3px / 26% 26% 2px 2px;
+  overflow: hidden;
+  background: #0a0708;
+  box-shadow: inset 0 0 0 2px rgba(201,162,78,.75), inset 0 0 30px rgba(0,0,0,.65);
+}
+
+/* reflection streak on the glass */
+.win-glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(122deg, rgba(255,255,255,.18) 0 16%, transparent 32%);
+}
+
+/* the view behind the glass — each director a mood */
+.win-view {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform: scale(1.03);
+  filter: brightness(.72) saturate(1.05);
+  opacity: .92;
+  transition: transform .9s ease, filter .6s ease, opacity .6s ease;
+}
+.win:hover .win-view {
+  transform: scale(1.1);
+  filter: brightness(1.08) saturate(1.18);
+  opacity: 1;
+}
+
+.view-kubrick   { background: radial-gradient(circle at 50% 40%, #a6d0ea, #2b5a7d 42%, #0a1622 100%); }
+.view-tarkovsky { background: radial-gradient(circle at 50% 58%, #d3bd83, #5c6b3f 46%, #1a1f12 100%); }
+.view-hitchcock { background: radial-gradient(circle at 50% 44%, #dfe6e0, #46685b 42%, #0f1a16 100%); }
+.view-scorsese  { background: radial-gradient(circle at 50% 56%, #ffd39a, #c0431f 46%, #2f0a08 100%); }
+.view-coppola   { background: radial-gradient(circle at 50% 50%, #f0cd84, #8a5a20 46%, #241408 100%); }
+.view-ceylan    { background: radial-gradient(circle at 50% 60%, #ecd89c, #9a7d3e 44%, #221b0f 100%); }
+
+/* muntins / window grille */
+.win-grille {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: .9;
+  transition: opacity .5s ease;
+  background:
+    linear-gradient(90deg, transparent calc(50% - 1px), rgba(201,162,78,.6) 50%, transparent calc(50% + 1px)),
+    linear-gradient(180deg, transparent calc(33.3% - 1px), rgba(201,162,78,.45) 33.3%, transparent calc(33.3% + 1px)),
+    linear-gradient(180deg, transparent calc(66.6% - 1px), rgba(201,162,78,.45) 66.6%, transparent calc(66.6% + 1px));
+}
+.win:hover .win-grille { opacity: .45; }
+
+/* director emblem badge */
+.win-emblem {
+  position: absolute;
+  z-index: 5;
+  right: 18px;
+  bottom: 100px;
+  width: 84px;
+  height: 84px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #2a1802;
+  background: radial-gradient(circle at 38% 32%, #f6df97, #8a6d2c);
+  box-shadow: 0 5px 14px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.4);
+  transition: transform .45s ease;
+}
+.win:hover .win-emblem { transform: scale(1.1) rotate(-3deg); }
+.win-emblem svg { width: 58%; height: 58%; display: block; }
+
+/* brass nameplate */
+.win-plate {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 20px;
+  z-index: 6;
+  padding: 12px 16px;
+  border-radius: 3px;
+  color: #241403;
+  background: linear-gradient(180deg, #dcbc72, #9c7a34);
+  box-shadow: 0 5px 12px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.28);
+}
+.win-plate .director-year {
+  font-size: .64rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .82;
+}
+.win-plate strong {
+  display: block;
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.4rem, 4vw, 4rem);
-  line-height: .88;
+  font-size: clamp(1.45rem, 2.3vw, 2.1rem);
+  line-height: .96;
+  margin: 2px 0 1px;
 }
-
-.director-card em {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
-}
-
-.director-year {
-  font-size: .72rem;
-  letter-spacing: .14em;
+.win-plate em {
+  font-style: italic;
+  font-size: .86rem;
+  opacity: .85;
 }
 
 .film-grid {
@@ -666,4 +805,101 @@ footer {
   }
 
   .scroll-cue { display: none; }
+}
+
+/* ===== Dil değiştirici (TR / EN / DE) ===== */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 28px);
+}
+
+.lang-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+}
+
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--paper-soft);
+  font: 600 .66rem/1 "Inter", sans-serif;
+  letter-spacing: .08em;
+  padding: 6px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.lang-switch button:hover { color: var(--paper); }
+.lang-switch button.is-active { background: var(--red); color: #fff; }
+
+.lang-switch--float {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 60;
+  background: rgba(8,8,8,.72);
+  backdrop-filter: blur(8px);
+}
+
+/* ===== Alt sayfalar: sayfadan sayfaya geçiş ===== */
+.page-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 1px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(201,162,78,.3);
+  background: rgba(201,162,78,.18);
+}
+
+.page-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 26px clamp(18px, 4vw, 46px);
+  background: linear-gradient(180deg, rgba(20,12,8,.6), rgba(8,5,4,.85));
+  transition: background .25s ease;
+}
+
+.page-nav a:hover { background: rgba(163,15,25,.28); }
+
+.page-nav .pn-next { text-align: right; align-items: flex-end; }
+.page-nav .pn-home {
+  justify-content: center;
+  text-align: center;
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #d0a047;
+}
+
+.page-nav span {
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--paper-soft);
+}
+
+.page-nav strong {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+  line-height: 1.05;
+  color: var(--paper);
+}
+
+@media (max-width: 620px) {
+  .page-nav { grid-template-columns: 1fr 1fr; }
+  .page-nav .pn-home {
+    grid-column: 1 / -1;
+    order: -1;
+    padding: 16px;
+  }
 }

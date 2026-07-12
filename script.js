@@ -23,12 +23,22 @@ const heroVideo = document.getElementById("heroVideo");
 const soundToggle = document.getElementById("soundToggle");
 
 if (heroVideo && soundToggle) {
+  const SND = {
+    tr: { on: "Sesi aç", off: "Sesi kapat" },
+    en: { on: "Sound on", off: "Sound off" },
+    de: { on: "Ton an", off: "Ton aus" }
+  };
+  const curLang = () =>
+    (document.documentElement.getAttribute("lang") || "tr").toLowerCase();
+
   const refresh = () => {
     const on = !heroVideo.muted;
+    const t = SND[curLang()] || SND.tr;
+    const label = on ? t.off : t.on;
     soundToggle.classList.toggle("is-on", on);
     soundToggle.querySelector(".sound-ico").textContent = on ? "🔊" : "🔇";
-    soundToggle.querySelector(".sound-txt").textContent = on ? "Sesi kapat" : "Sesi aç";
-    soundToggle.setAttribute("aria-label", on ? "Sesi kapat" : "Sesi aç");
+    soundToggle.querySelector(".sound-txt").textContent = label;
+    soundToggle.setAttribute("aria-label", label);
   };
 
   soundToggle.addEventListener("click", () => {
@@ -40,5 +50,7 @@ if (heroVideo && soundToggle) {
     refresh();
   });
 
+  // Dil değişince buton metni de güncellensin
+  document.addEventListener("sinefil:langchange", refresh);
   refresh();
 }

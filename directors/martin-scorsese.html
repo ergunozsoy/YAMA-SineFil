@@ -19,24 +19,60 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Martin Scorsese</h1>
       <p class="detail-meta">1942–</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Little Italy'de, kilise ile sokak arasında büyüdü; sineması da hep bu ikisinin arasında gerilir. Suç, günah ve kefaret hikâyelerini kamera enerjisiyle anlatan yaşayan usta. Aynı zamanda sinema tarihinin en büyük savunucusu: Film Foundation ile yüzlerce klasiği restore ettirdi — arşivciliğin de azizi.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Akıcı, uzun steadicam planları — Goodfellas'ın Copacabana girişi ders kitabıdır</li><li>Rock müziğin anlatı motoru olarak kullanımı</li><li>Anti-kahraman portreleri: sempati ile dehşet aynı yüzde</li><li>Hızlı kesme, dondurulan kare, iç ses — New York temposu</li><li>De Niro ve DiCaprio ile iki kuşaklık ortaklık</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>1973</strong> — Mean Streets</li><li><strong>1976</strong> — Taxi Driver / Taksi Şoförü</li><li><strong>1980</strong> — Raging Bull / Kızgın Boğa</li><li><strong>1990</strong> — Goodfellas / Sıkı Dostlar</li><li><strong>1993</strong> — The Age of Innocence</li><li><strong>1995</strong> — Casino</li><li><strong>2006</strong> — The Departed / Köstebek</li><li><strong>2013</strong> — The Wolf of Wall Street</li><li><strong>2019</strong> — The Irishman</li><li><strong>2023</strong> — Killers of the Flower Moon</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Goodfellas — anlatım enerjisinin zirvesi; başlangıç için ideal</li><li>Taxi Driver — yalnızlığın ve şehrin karanlık aynası</li><li>Raging Bull — siyah-beyaz bir kefaret destanı</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">Little Italy'de, kilise ile sokak arasında büyüdü; sineması da hep bu ikisinin arasında gerilir. Suç, günah ve kefaret hikâyelerini kamera enerjisiyle anlatan yaşayan usta. Aynı zamanda sinema tarihinin en büyük savunucusu: Film Foundation ile yüzlerce klasiği restore ettirdi — arşivciliğin de azizi.</p>
+    <p class="lede" data-lang="en" hidden>He grew up in Little Italy, between the church and the street; his cinema, too, is forever stretched taut between the two. A living master who tells stories of crime, sin and redemption with the raw energy of the camera. He is also the greatest champion in the history of cinema: through the Film Foundation he has had hundreds of classics restored — a saint of the archive as well.</p>
+    <p class="lede" data-lang="de" hidden>Er wuchs in Little Italy auf, zwischen Kirche und Straße; auch sein Kino ist stets zwischen diesen beiden gespannt. Ein lebender Meister, der Geschichten von Verbrechen, Sünde und Erlösung mit der Energie der Kamera erzählt. Zugleich der größte Fürsprecher der Filmgeschichte: Mit der Film Foundation ließ er Hunderte Klassiker restaurieren — auch ein Schutzheiliger des Archivs.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Akıcı, uzun steadicam planları — Goodfellas'ın Copacabana girişi ders kitabıdır</li><li>Rock müziğin anlatı motoru olarak kullanımı</li><li>Anti-kahraman portreleri: sempati ile dehşet aynı yüzde</li><li>Hızlı kesme, dondurulan kare, iç ses — New York temposu</li><li>De Niro ve DiCaprio ile iki kuşaklık ortaklık</li></ul>
+    <ul data-lang="en" hidden><li>Fluid, extended Steadicam shots — the Copacabana entrance in Goodfellas is textbook</li><li>The use of rock music as a narrative engine</li><li>Portraits of the anti-hero: sympathy and horror on the same face</li><li>Rapid cutting, freeze-frame, voice-over — the tempo of New York</li><li>A two-generation partnership with De Niro and DiCaprio</li></ul>
+    <ul data-lang="de" hidden><li>Fließende, lange Steadicam-Einstellungen — der Copacabana-Eingang in Goodfellas ist ein Lehrstück</li><li>Der Einsatz von Rockmusik als erzählerischer Motor</li><li>Antihelden-Porträts: Sympathie und Grauen auf demselben Gesicht</li><li>Schneller Schnitt, Standbild, innere Stimme — der Rhythmus von New York</li><li>Eine über zwei Generationen reichende Partnerschaft mit De Niro und DiCaprio</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>1973</strong> — Mean Streets</li><li><strong>1976</strong> — Taxi Driver / Taksi Şoförü</li><li><strong>1980</strong> — Raging Bull / Kızgın Boğa</li><li><strong>1990</strong> — Goodfellas / Sıkı Dostlar</li><li><strong>1993</strong> — The Age of Innocence</li><li><strong>1995</strong> — Casino</li><li><strong>2006</strong> — The Departed / Köstebek</li><li><strong>2013</strong> — The Wolf of Wall Street</li><li><strong>2019</strong> — The Irishman</li><li><strong>2023</strong> — Killers of the Flower Moon</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>1973</strong> — Mean Streets</li><li><strong>1976</strong> — Taxi Driver / Taksi Şoförü</li><li><strong>1980</strong> — Raging Bull / Kızgın Boğa</li><li><strong>1990</strong> — Goodfellas / Sıkı Dostlar</li><li><strong>1993</strong> — The Age of Innocence</li><li><strong>1995</strong> — Casino</li><li><strong>2006</strong> — The Departed / Köstebek</li><li><strong>2013</strong> — The Wolf of Wall Street</li><li><strong>2019</strong> — The Irishman</li><li><strong>2023</strong> — Killers of the Flower Moon</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>1973</strong> — Mean Streets</li><li><strong>1976</strong> — Taxi Driver / Taksi Şoförü</li><li><strong>1980</strong> — Raging Bull / Kızgın Boğa</li><li><strong>1990</strong> — Goodfellas / Sıkı Dostlar</li><li><strong>1993</strong> — The Age of Innocence</li><li><strong>1995</strong> — Casino</li><li><strong>2006</strong> — The Departed / Köstebek</li><li><strong>2013</strong> — The Wolf of Wall Street</li><li><strong>2019</strong> — The Irishman</li><li><strong>2023</strong> — Killers of the Flower Moon</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Goodfellas — anlatım enerjisinin zirvesi; başlangıç için ideal</li><li>Taxi Driver — yalnızlığın ve şehrin karanlık aynası</li><li>Raging Bull — siyah-beyaz bir kefaret destanı</li></ol>
+    <ol data-lang="en" hidden><li>Goodfellas — the peak of narrative energy; ideal as a starting point</li><li>Taxi Driver — a dark mirror of loneliness and the city</li><li>Raging Bull — a black-and-white epic of redemption</li></ol>
+    <ol data-lang="de" hidden><li>Goodfellas — der Gipfel erzählerischer Energie; ideal für den Einstieg</li><li>Taxi Driver — ein dunkler Spiegel der Einsamkeit und der Stadt</li><li>Raging Bull — ein Schwarzweiß-Epos der Erlösung</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space set aside for personal notes, scene analyses and a viewing diary — one line with every rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — bei jedem erneuten Sehen eine Zeile.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="alfred-hitchcock.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Alfred Hitchcock</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="francis-ford-coppola.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Francis Ford Coppola</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

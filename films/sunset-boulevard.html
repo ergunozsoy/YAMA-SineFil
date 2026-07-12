@@ -19,22 +19,58 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Film</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Film</p>
+      <p class="section-kicker" data-lang="en" hidden>Film</p>
+      <p class="section-kicker" data-lang="de" hidden>Film</p>
       <h1>Sunset Boulevard</h1>
       <p class="detail-meta">1950 · Billy Wilder</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Billy Wilder'ın kara filmi, Hollywood'un kendi karanlık aynasıdır: hikâyeyi yüzükoyun havuzda yüzen bir ölü anlatır. Sessiz sinemanın unutulmuş yıldızı Norma Desmond ile kalem parası peşindeki senarist Joe Gillis'in ilişkisi, şöhretin ve unutulmanın anatomisidir.</p>
-    <h2>Neden önemli?</h2>
-    <p>Sinema, kendisi hakkında hiç bu kadar acımasız konuşmamıştı: Gloria Swanson (gerçekte de sessiz dönem yıldızı) ve yönetmen Erich von Stroheim, kendi hayat hikâyelerinin gölgesini rollerine taşır. Kara film ışığı, gotik konak ve keskin diyalog — tür sinemasının zirve buluşması.</p>
-    <h2>İzlerken dikkat</h2>
-    <ul><li>Ölü anlatıcı: daha ilk sahnede sonu bilen bir hikâye nasıl gerilim üretir?</li><li>Norma'nın konağı: perdeleri kapalı bir zaman kapsülü, geçmişin müzesi</li><li>Gerçek ile kurmacanın iç içeliği: Paramount kapıları, Cecil B. DeMille sahnesi</li><li>Final merdiveni: çılgınlıkla zarafetin aynı karede buluşması</li><li>Kara film ışıklandırması: jaluzi gölgeleri, sigara dumanı, gece</li></ul>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="lede" data-lang="tr">Billy Wilder'ın kara filmi, Hollywood'un kendi karanlık aynasıdır: hikâyeyi yüzükoyun havuzda yüzen bir ölü anlatır. Sessiz sinemanın unutulmuş yıldızı Norma Desmond ile kalem parası peşindeki senarist Joe Gillis'in ilişkisi, şöhretin ve unutulmanın anatomisidir.</p>
+    <p class="lede" data-lang="en" hidden>Billy Wilder's film noir is Hollywood's own darkened mirror: the story is narrated by a dead man floating face-down in a swimming pool. The bond between Norma Desmond, the forgotten star of silent cinema, and Joe Gillis, a screenwriter chasing pocket money, is an anatomy of fame and oblivion.</p>
+    <p class="lede" data-lang="de" hidden>Billy Wilders Film noir ist Hollywoods eigener verdunkelter Spiegel: Erzählt wird die Geschichte von einem Toten, der mit dem Gesicht nach unten in einem Swimmingpool treibt. Die Beziehung zwischen Norma Desmond, dem vergessenen Star des Stummfilms, und Joe Gillis, einem Drehbuchautor auf der Jagd nach ein paar Groschen, ist eine Anatomie von Ruhm und Vergessen.</p>
+    <h2 data-lang="tr">Neden önemli?</h2>
+    <h2 data-lang="en" hidden>Why it matters</h2>
+    <h2 data-lang="de" hidden>Warum es wichtig ist</h2>
+    <p data-lang="tr">Sinema, kendisi hakkında hiç bu kadar acımasız konuşmamıştı: Gloria Swanson (gerçekte de sessiz dönem yıldızı) ve yönetmen Erich von Stroheim, kendi hayat hikâyelerinin gölgesini rollerine taşır. Kara film ışığı, gotik konak ve keskin diyalog — tür sinemasının zirve buluşması.</p>
+    <p data-lang="en" hidden>Cinema had never spoken about itself so mercilessly: Gloria Swanson (in truth a silent-era star herself) and director Erich von Stroheim carry the shadow of their own life stories into their roles. The light of film noir, a gothic mansion and razor-sharp dialogue — the summit meeting of genre cinema.</p>
+    <p data-lang="de" hidden>Das Kino hat noch nie so gnadenlos über sich selbst gesprochen: Gloria Swanson (in Wahrheit selbst ein Star der Stummfilmzeit) und Regisseur Erich von Stroheim tragen den Schatten ihrer eigenen Lebensgeschichten in ihre Rollen. Das Licht des Film noir, eine gotische Villa und messerscharfe Dialoge — der Gipfel des Genrekinos.</p>
+    <h2 data-lang="tr">İzlerken dikkat</h2>
+    <h2 data-lang="en" hidden>What to watch for</h2>
+    <h2 data-lang="de" hidden>Worauf man achten sollte</h2>
+    <ul data-lang="tr"><li>Ölü anlatıcı: daha ilk sahnede sonu bilen bir hikâye nasıl gerilim üretir?</li><li>Norma'nın konağı: perdeleri kapalı bir zaman kapsülü, geçmişin müzesi</li><li>Gerçek ile kurmacanın iç içeliği: Paramount kapıları, Cecil B. DeMille sahnesi</li><li>Final merdiveni: çılgınlıkla zarafetin aynı karede buluşması</li><li>Kara film ışıklandırması: jaluzi gölgeleri, sigara dumanı, gece</li></ul>
+    <ul data-lang="en" hidden><li>The dead narrator: how does a story that knows its ending from the very first scene generate suspense?</li><li>Norma's mansion: a time capsule with drawn curtains, a museum of the past</li><li>The interweaving of reality and fiction: the gates of Paramount, the Cecil B. DeMille scene</li><li>The final staircase: madness and grace meeting in the same frame</li><li>Film noir lighting: the shadows of Venetian blinds, cigarette smoke, night</li></ul>
+    <ul data-lang="de" hidden><li>Der tote Erzähler: Wie erzeugt eine Geschichte Spannung, die ihr Ende schon in der allerersten Szene kennt?</li><li>Normas Villa: eine Zeitkapsel mit zugezogenen Vorhängen, ein Museum der Vergangenheit</li><li>Die Verflechtung von Wirklichkeit und Fiktion: die Tore von Paramount, die Cecil-B.-DeMille-Szene</li><li>Die finale Treppe: Wahnsinn und Anmut, vereint im selben Bild</li><li>Die Beleuchtung des Film noir: die Schatten der Jalousien, Zigarettenrauch, Nacht</li></ul>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Bu filme dair kişisel izlenimler, sahne notları ve yeniden izleme tarihleri için alan.</p>
+    <p class="notlar" data-lang="en" hidden>Space for personal impressions of this film, scene notes and rewatch dates.</p>
+    <p class="notlar" data-lang="de" hidden>Raum für persönliche Eindrücke zu diesem Film, Szenennotizen und Wiedersichtungsdaten.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="stalker.html" data-lang="tr"><span>← Önceki</span><strong>Stalker</strong></a>
+    <a class="pn-prev" href="stalker.html" data-lang="en" hidden><span>← Previous</span><strong>Stalker</strong></a>
+    <a class="pn-prev" href="stalker.html" data-lang="de" hidden><span>← Zurück</span><strong>Stalker</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="once-upon-a-time-in-anatolia.html" data-lang="tr"><span>Sonraki →</span><strong>Bir Zamanlar Anadolu’da</strong></a>
+    <a class="pn-next" href="once-upon-a-time-in-anatolia.html" data-lang="en" hidden><span>Next →</span><strong>Bir Zamanlar Anadolu’da</strong></a>
+    <a class="pn-next" href="once-upon-a-time-in-anatolia.html" data-lang="de" hidden><span>Weiter →</span><strong>Bir Zamanlar Anadolu’da</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

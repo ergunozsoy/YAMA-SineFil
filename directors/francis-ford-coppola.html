@@ -19,24 +19,60 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Francis Ford Coppola</h1>
       <p class="detail-meta">1939–</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Yeni Hollywood kuşağının en cesur kumarbazı: 1970'lerde art arda dört başyapıt verdi, sonra her şeyini yeni denemelere yatırdı. Aile, iktidar ve Amerika'nın karanlık rüyası onun büyük temalarıdır. Baba üçlemesi, suç filmini Shakespeare trajedisine dönüştürdü; Apocalypse Now ise savaş filmini bir sayıklamaya.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Opera gibi kurulan aile sahneleri: düğün, vaftiz, cenaze — ve paralel kurgu</li><li>Gordon Willis'in 'karanlık' ışığı: yüzlerin gölgede kalan yarısı</li><li>Ses tasarımının öncüsü — Apocalypse Now'ın helikopter senfonisi</li><li>İktidarın sessizliği: Michael Corleone'nin kapanan kapısı</li><li>Aile şirketi sinema: Coppola klanı kamera önünde ve arkasında</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>1972</strong> — The Godfather / Baba</li><li><strong>1974</strong> — The Conversation / Konuşma</li><li><strong>1974</strong> — The Godfather Part II</li><li><strong>1979</strong> — Apocalypse Now / Kıyamet</li><li><strong>1983</strong> — Rumble Fish</li><li><strong>1990</strong> — The Godfather Part III</li><li><strong>2024</strong> — Megalopolis</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Baba — sinema tarihinin ortak dili; buradan</li><li>The Conversation — küçük, paranoyak, kusursuz; gizli mücevher</li><li>Apocalypse Now — savaşın nehrinde ahlaki karanlığa yolculuk</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">Yeni Hollywood kuşağının en cesur kumarbazı: 1970'lerde art arda dört başyapıt verdi, sonra her şeyini yeni denemelere yatırdı. Aile, iktidar ve Amerika'nın karanlık rüyası onun büyük temalarıdır. Baba üçlemesi, suç filmini Shakespeare trajedisine dönüştürdü; Apocalypse Now ise savaş filmini bir sayıklamaya.</p>
+    <p class="lede" data-lang="en" hidden>The boldest gambler of the New Hollywood generation: in the 1970s he delivered four masterpieces in a row, then wagered everything on new experiments. Family, power and the dark dream of America are his great themes. The Godfather trilogy turned the crime film into Shakespearean tragedy; Apocalypse Now turned the war film into a fever dream.</p>
+    <p class="lede" data-lang="de" hidden>Der kühnste Spieler der New-Hollywood-Generation: In den 1970ern schuf er vier Meisterwerke in Folge und setzte danach alles auf neue Experimente. Familie, Macht und der dunkle Traum Amerikas sind seine großen Themen. Die Godfather-Trilogie verwandelte den Kriminalfilm in eine Shakespeare-Tragödie; Apocalypse Now den Kriegsfilm in ein Fieberdelirium.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Opera gibi kurulan aile sahneleri: düğün, vaftiz, cenaze — ve paralel kurgu</li><li>Gordon Willis'in 'karanlık' ışığı: yüzlerin gölgede kalan yarısı</li><li>Ses tasarımının öncüsü — Apocalypse Now'ın helikopter senfonisi</li><li>İktidarın sessizliği: Michael Corleone'nin kapanan kapısı</li><li>Aile şirketi sinema: Coppola klanı kamera önünde ve arkasında</li></ul>
+    <ul data-lang="en" hidden><li>Family scenes staged like opera: wedding, baptism, funeral — and parallel editing</li><li>Gordon Willis's 'dark' lighting: the half of a face left in shadow</li><li>A pioneer of sound design — the helicopter symphony of Apocalypse Now</li><li>The silence of power: the door closing on Michael Corleone</li><li>Cinema as family firm: the Coppola clan in front of and behind the camera</li></ul>
+    <ul data-lang="de" hidden><li>Wie eine Oper inszenierte Familienszenen: Hochzeit, Taufe, Begräbnis — und Parallelmontage</li><li>Gordon Willis' „dunkles" Licht: die im Schatten liegende Gesichtshälfte</li><li>Ein Pionier des Sounddesigns — die Hubschraubersinfonie von Apocalypse Now</li><li>Die Stille der Macht: die sich vor Michael Corleone schließende Tür</li><li>Kino als Familienbetrieb: der Coppola-Clan vor und hinter der Kamera</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>1972</strong> — The Godfather / Baba</li><li><strong>1974</strong> — The Conversation / Konuşma</li><li><strong>1974</strong> — The Godfather Part II</li><li><strong>1979</strong> — Apocalypse Now / Kıyamet</li><li><strong>1983</strong> — Rumble Fish</li><li><strong>1990</strong> — The Godfather Part III</li><li><strong>2024</strong> — Megalopolis</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>1972</strong> — The Godfather</li><li><strong>1974</strong> — The Conversation</li><li><strong>1974</strong> — The Godfather Part II</li><li><strong>1979</strong> — Apocalypse Now</li><li><strong>1983</strong> — Rumble Fish</li><li><strong>1990</strong> — The Godfather Part III</li><li><strong>2024</strong> — Megalopolis</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>1972</strong> — The Godfather</li><li><strong>1974</strong> — The Conversation</li><li><strong>1974</strong> — The Godfather Part II</li><li><strong>1979</strong> — Apocalypse Now</li><li><strong>1983</strong> — Rumble Fish</li><li><strong>1990</strong> — The Godfather Part III</li><li><strong>2024</strong> — Megalopolis</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Baba — sinema tarihinin ortak dili; buradan</li><li>The Conversation — küçük, paranoyak, kusursuz; gizli mücevher</li><li>Apocalypse Now — savaşın nehrinde ahlaki karanlığa yolculuk</li></ol>
+    <ol data-lang="en" hidden><li>The Godfather — the common tongue of film history; start here</li><li>The Conversation — small, paranoid, flawless; a hidden gem</li><li>Apocalypse Now — a journey down the river of war into moral darkness</li></ol>
+    <ol data-lang="de" hidden><li>The Godfather — die gemeinsame Sprache der Filmgeschichte; hier beginnen</li><li>The Conversation — klein, paranoid, makellos; ein verborgenes Juwel</li><li>Apocalypse Now — eine Reise den Fluss des Krieges hinab in die moralische Finsternis</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space reserved for personal notes, scene analyses and a viewing diary — one line with every rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — eine Zeile bei jedem erneuten Sehen.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="martin-scorsese.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Martin Scorsese</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="nuri-bilge-ceylan.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Nuri Bilge Ceylan</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

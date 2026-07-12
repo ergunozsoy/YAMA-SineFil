@@ -19,24 +19,60 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Andrei Tarkovski</h1>
       <p class="detail-meta">1932–1986</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Sovyet sinemasının içinden çıkıp zamanın kendisini malzeme yapan yönetmen. Yedi uzun filmlik külliyatı, sinemayı 'zamanda heykel yontmak' olarak tanımlayan estetiğinin kanıtıdır. Su, ateş, rüzgâr ve bellek; onun kadrajında dua gibi ağır akar. İnanç, vicdan ve ev özlemi bütün filmlerinin altındaki nehirdir.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Uzun plan-sekanslar: kesmeden akan, seyirciyi kendi ritmine çağıran zaman</li><li>Doğa unsurlarının neredeyse karakter gibi kullanımı — yağmur içeri yağar</li><li>Rüya, anı ve şimdiki zamanın ayrımsız iç içe geçişi</li><li>Renk ile siyah-beyazın aynı film içinde bilinçli değişimi</li><li>Otobiyografik bellek: baba şiirleri (Arseniy Tarkovski) filmlerde okunur</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>1962</strong> — Ivan'ın Çocukluğu</li><li><strong>1966</strong> — Andrey Rublev</li><li><strong>1972</strong> — Solaris</li><li><strong>1975</strong> — Ayna / Zerkalo</li><li><strong>1979</strong> — Stalker</li><li><strong>1983</strong> — Nostalghia</li><li><strong>1986</strong> — Kurban / Offret</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Stalker — felsefi çekirdeğine en dolaysız kapı</li><li>Ayna — zor ama en kişisel; şiirle sinemanın kaynaştığı yer</li><li>Andrey Rublev — sanatçının imanı üzerine bir destan</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">Sovyet sinemasının içinden çıkıp zamanın kendisini malzeme yapan yönetmen. Yedi uzun filmlik külliyatı, sinemayı 'zamanda heykel yontmak' olarak tanımlayan estetiğinin kanıtıdır. Su, ateş, rüzgâr ve bellek; onun kadrajında dua gibi ağır akar. İnanç, vicdan ve ev özlemi bütün filmlerinin altındaki nehirdir.</p>
+    <p class="lede" data-lang="en" hidden>A director who emerged from within Soviet cinema and made time itself his raw material. His body of work — seven feature films — stands as proof of an aesthetic that defined cinema as 'sculpting in time'. Water, fire, wind and memory flow through his frame as heavily as a prayer. Faith, conscience and the longing for home are the river running beneath all his films.</p>
+    <p class="lede" data-lang="de" hidden>Ein Regisseur, der aus dem sowjetischen Kino hervorging und die Zeit selbst zu seinem Material machte. Sein Werk aus sieben Spielfilmen ist der Beweis einer Ästhetik, die das Kino als 'Bildhauerei in der Zeit' definierte. Wasser, Feuer, Wind und Erinnerung fließen in seinem Bildausschnitt schwer wie ein Gebet. Glaube, Gewissen und die Sehnsucht nach dem Zuhause sind der Strom unter all seinen Filmen.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Uzun plan-sekanslar: kesmeden akan, seyirciyi kendi ritmine çağıran zaman</li><li>Doğa unsurlarının neredeyse karakter gibi kullanımı — yağmur içeri yağar</li><li>Rüya, anı ve şimdiki zamanın ayrımsız iç içe geçişi</li><li>Renk ile siyah-beyazın aynı film içinde bilinçli değişimi</li><li>Otobiyografik bellek: baba şiirleri (Arseniy Tarkovski) filmlerde okunur</li></ul>
+    <ul data-lang="en" hidden><li>Long takes: time flowing without a cut, summoning the viewer into its own rhythm</li><li>The elements of nature used almost as characters — the rain falls indoors</li><li>The seamless interweaving of dream, memory and the present</li><li>The deliberate shift between colour and black-and-white within the same film</li><li>Autobiographical memory: the father's poems (Arseniy Tarkovski) are recited in the films</li></ul>
+    <ul data-lang="de" hidden><li>Lange Plansequenzen: Zeit, die ohne Schnitt fließt und den Zuschauer in ihren eigenen Rhythmus ruft</li><li>Der Einsatz der Naturelemente fast wie Figuren — der Regen fällt nach innen</li><li>Das nahtlose Ineinandergreifen von Traum, Erinnerung und Gegenwart</li><li>Der bewusste Wechsel zwischen Farbe und Schwarz-Weiß innerhalb desselben Films</li><li>Autobiografisches Gedächtnis: die Gedichte des Vaters (Arseniy Tarkovski) werden in den Filmen vorgetragen</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>1962</strong> — Ivan'ın Çocukluğu</li><li><strong>1966</strong> — Andrey Rublev</li><li><strong>1972</strong> — Solaris</li><li><strong>1975</strong> — Ayna / Zerkalo</li><li><strong>1979</strong> — Stalker</li><li><strong>1983</strong> — Nostalghia</li><li><strong>1986</strong> — Kurban / Offret</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>1962</strong> — Ivan'ın Çocukluğu</li><li><strong>1966</strong> — Andrey Rublev</li><li><strong>1972</strong> — Solaris</li><li><strong>1975</strong> — Ayna / Zerkalo</li><li><strong>1979</strong> — Stalker</li><li><strong>1983</strong> — Nostalghia</li><li><strong>1986</strong> — Kurban / Offret</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>1962</strong> — Ivan'ın Çocukluğu</li><li><strong>1966</strong> — Andrey Rublev</li><li><strong>1972</strong> — Solaris</li><li><strong>1975</strong> — Ayna / Zerkalo</li><li><strong>1979</strong> — Stalker</li><li><strong>1983</strong> — Nostalghia</li><li><strong>1986</strong> — Kurban / Offret</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Stalker — felsefi çekirdeğine en dolaysız kapı</li><li>Ayna — zor ama en kişisel; şiirle sinemanın kaynaştığı yer</li><li>Andrey Rublev — sanatçının imanı üzerine bir destan</li></ol>
+    <ol data-lang="en" hidden><li>Stalker — the most direct door into his philosophical core</li><li>Ayna — difficult but the most personal; where poetry and cinema fuse</li><li>Andrey Rublev — an epic on the artist's faith</li></ol>
+    <ol data-lang="de" hidden><li>Stalker — die unmittelbarste Tür zu seinem philosophischen Kern</li><li>Ayna — schwierig, aber am persönlichsten; wo Poesie und Kino verschmelzen</li><li>Andrey Rublev — ein Epos über den Glauben des Künstlers</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space set aside for personal notes, scene analyses and a viewing diary — one line with every rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — eine Zeile bei jedem erneuten Sehen.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="stanley-kubrick.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Stanley Kubrick</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="alfred-hitchcock.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Alfred Hitchcock</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>

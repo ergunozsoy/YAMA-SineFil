@@ -19,24 +19,60 @@
   </style>
 </head>
 <body>
-  <section class="detail-hero">
+  
+  <div class="lang-switch lang-switch--float" role="group" aria-label="Language">
+    <button type="button" data-set-lang="tr">TR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="de">DE</button>
+  </div>
+<section class="detail-hero">
     <div>
-      <a class="back" href="../index.html">← Sinefil ana sayfa</a>
-      <p class="section-kicker">Yönetmen</p>
+      <a class="back" href="../index.html" data-lang="tr">← Sinefil ana sayfa</a>
+      <a class="back" href="../index.html" data-lang="en" hidden>← Sinefil home</a>
+      <a class="back" href="../index.html" data-lang="de" hidden>← Zur Sinefil-Startseite</a>
+      <p class="section-kicker" data-lang="tr">Yönetmen</p>
+      <p class="section-kicker" data-lang="en" hidden>Director</p>
+      <p class="section-kicker" data-lang="de" hidden>Regisseur</p>
       <h1>Alfred Hitchcock</h1>
       <p class="detail-meta">1899–1980</p>
     </div>
   </section>
   <main class="detail-body">
-    <p class="lede">Londra'da sessiz sinemada başladı, Hollywood'da 'gerilimin efendisi' oldu. Elli filmi aşan kariyeri boyunca tek bir şeyi kusursuzlaştırdı: seyircinin bilgisiyle oynamak. 'Sürpriz değil, gerilim' onun formülüdür — bombanın masanın altında olduğunu seyirci bilir, karakter bilmez. Suç onun malzemesi, bakış ise asıl konusudur.</p>
-    <h2>Sinema dili</h2>
-    <ul><li>Seyirciyi karakterden fazla bilgilendiren 'suspense' kurgusu</li><li>Bakışın sineması: dikizleme, gözetleme, görme suçu (Rear Window)</li><li>MacGuffin: herkesin peşinde koştuğu ama aslında önemsiz olan nesne</li><li>Kamera hareketiyle psikoloji — Vertigo'nun dolly-zoom baş dönmesi</li><li>Kendi filmlerinde saniyelik görünme geleneği (cameo)</li></ul>
-    <h2>Seçme filmografi</h2>
-    <ul class="filmo"><li><strong>1935</strong> — The 39 Steps</li><li><strong>1946</strong> — Notorious</li><li><strong>1951</strong> — Strangers on a Train</li><li><strong>1954</strong> — Rear Window / Arka Pencere</li><li><strong>1958</strong> — Vertigo / Ölüm Korkusu</li><li><strong>1959</strong> — North by Northwest / Gizli Teşkilat</li><li><strong>1960</strong> — Psycho / Sapık</li><li><strong>1963</strong> — The Birds / Kuşlar</li></ul>
-    <h2>Nereden başlamalı?</h2>
-    <ol><li>Rear Window — sinemanın kendisi üzerine bir gerilim</li><li>Psycho — modern korkunun kırılma noktası</li><li>Vertigo — saplantının en güzel ve en hasta hâli; eleştirmenlerce zirve</li></ol>
-    <h2>Filin defteri</h2>
-    <p class="notlar">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="lede" data-lang="tr">Londra'da sessiz sinemada başladı, Hollywood'da 'gerilimin efendisi' oldu. Elli filmi aşan kariyeri boyunca tek bir şeyi kusursuzlaştırdı: seyircinin bilgisiyle oynamak. 'Sürpriz değil, gerilim' onun formülüdür — bombanın masanın altında olduğunu seyirci bilir, karakter bilmez. Suç onun malzemesi, bakış ise asıl konusudur.</p>
+    <p class="lede" data-lang="en" hidden>He began in London's silent cinema and became the 'master of suspense' in Hollywood. Across a career spanning more than fifty films, he perfected a single thing: playing with what the audience knows. 'Not surprise, but suspense' is his formula — the audience knows there is a bomb under the table, the character does not. Crime is his material, but the gaze is his true subject.</p>
+    <p class="lede" data-lang="de" hidden>Er begann im Londoner Stummfilm und wurde in Hollywood zum 'Meister der Spannung'. Über eine Laufbahn von mehr als fünfzig Filmen vollendete er eine einzige Sache: das Spiel mit dem Wissen des Zuschauers. 'Nicht Überraschung, sondern Spannung' lautet seine Formel — der Zuschauer weiß, dass die Bombe unter dem Tisch liegt, die Figur nicht. Das Verbrechen ist sein Material, der Blick jedoch sein eigentliches Thema.</p>
+    <h2 data-lang="tr">Sinema dili</h2>
+    <h2 data-lang="en" hidden>Cinematic language</h2>
+    <h2 data-lang="de" hidden>Filmsprache</h2>
+    <ul data-lang="tr"><li>Seyirciyi karakterden fazla bilgilendiren 'suspense' kurgusu</li><li>Bakışın sineması: dikizleme, gözetleme, görme suçu (Rear Window)</li><li>MacGuffin: herkesin peşinde koştuğu ama aslında önemsiz olan nesne</li><li>Kamera hareketiyle psikoloji — Vertigo'nun dolly-zoom baş dönmesi</li><li>Kendi filmlerinde saniyelik görünme geleneği (cameo)</li></ul>
+    <ul data-lang="en" hidden><li>A 'suspense' construction that tells the audience more than the character knows</li><li>A cinema of the gaze: peeping, surveillance, the crime of seeing (Rear Window)</li><li>MacGuffin: the object everyone chases yet which is ultimately unimportant</li><li>Psychology through camera movement — the dolly-zoom vertigo of Vertigo</li><li>The tradition of his own split-second appearance in his films (cameo)</li></ul>
+    <ul data-lang="de" hidden><li>Eine 'Suspense'-Dramaturgie, die dem Zuschauer mehr verrät als der Figur</li><li>Ein Kino des Blicks: Spähen, Beobachten, das Verbrechen des Sehens (Rear Window)</li><li>MacGuffin: der Gegenstand, dem alle nachjagen, der aber eigentlich belanglos ist</li><li>Psychologie durch Kamerabewegung — der Dolly-Zoom-Schwindel von Vertigo</li><li>Die Tradition des sekundenkurzen Auftritts in seinen eigenen Filmen (Cameo)</li></ul>
+    <h2 data-lang="tr">Seçme filmografi</h2>
+    <h2 data-lang="en" hidden>Selected filmography</h2>
+    <h2 data-lang="de" hidden>Ausgewählte Filmografie</h2>
+    <ul class="filmo" data-lang="tr"><li><strong>1935</strong> — The 39 Steps</li><li><strong>1946</strong> — Notorious</li><li><strong>1951</strong> — Strangers on a Train</li><li><strong>1954</strong> — Rear Window / Arka Pencere</li><li><strong>1958</strong> — Vertigo / Ölüm Korkusu</li><li><strong>1959</strong> — North by Northwest / Gizli Teşkilat</li><li><strong>1960</strong> — Psycho / Sapık</li><li><strong>1963</strong> — The Birds / Kuşlar</li></ul>
+    <ul class="filmo" data-lang="en" hidden><li><strong>1935</strong> — The 39 Steps</li><li><strong>1946</strong> — Notorious</li><li><strong>1951</strong> — Strangers on a Train</li><li><strong>1954</strong> — Rear Window / Arka Pencere</li><li><strong>1958</strong> — Vertigo / Ölüm Korkusu</li><li><strong>1959</strong> — North by Northwest / Gizli Teşkilat</li><li><strong>1960</strong> — Psycho / Sapık</li><li><strong>1963</strong> — The Birds / Kuşlar</li></ul>
+    <ul class="filmo" data-lang="de" hidden><li><strong>1935</strong> — The 39 Steps</li><li><strong>1946</strong> — Notorious</li><li><strong>1951</strong> — Strangers on a Train</li><li><strong>1954</strong> — Rear Window / Arka Pencere</li><li><strong>1958</strong> — Vertigo / Ölüm Korkusu</li><li><strong>1959</strong> — North by Northwest / Gizli Teşkilat</li><li><strong>1960</strong> — Psycho / Sapık</li><li><strong>1963</strong> — The Birds / Kuşlar</li></ul>
+    <h2 data-lang="tr">Nereden başlamalı?</h2>
+    <h2 data-lang="en" hidden>Where to start?</h2>
+    <h2 data-lang="de" hidden>Wo soll man anfangen?</h2>
+    <ol data-lang="tr"><li>Rear Window — sinemanın kendisi üzerine bir gerilim</li><li>Psycho — modern korkunun kırılma noktası</li><li>Vertigo — saplantının en güzel ve en hasta hâli; eleştirmenlerce zirve</li></ol>
+    <ol data-lang="en" hidden><li>Rear Window — a thriller about cinema itself</li><li>Psycho — the breaking point of modern horror</li><li>Vertigo — the most beautiful and most diseased form of obsession; the critics' summit</li></ol>
+    <ol data-lang="de" hidden><li>Rear Window — ein Thriller über das Kino selbst</li><li>Psycho — der Bruchpunkt des modernen Horrors</li><li>Vertigo — die schönste und kränkste Gestalt der Besessenheit; von der Kritik als Gipfel gefeiert</li></ol>
+    <h2 data-lang="tr">Filin defteri</h2>
+    <h2 data-lang="en" hidden>The elephant's notebook</h2>
+    <h2 data-lang="de" hidden>Das Notizbuch des Elefanten</h2>
+    <p class="notlar" data-lang="tr">Kişisel notlar, sahne çözümlemeleri ve izleme günlüğü için ayrılmış alan — her yeniden izleyişte bir satır.</p>
+    <p class="notlar" data-lang="en" hidden>A space reserved for personal notes, scene analyses and a viewing journal — one line with every rewatch.</p>
+    <p class="notlar" data-lang="de" hidden>Ein Raum für persönliche Notizen, Szenenanalysen und ein Sichtungstagebuch — eine Zeile bei jeder erneuten Sichtung.</p>
   </main>
+  <nav class="page-nav">
+    <a class="pn-prev" href="andrei-tarkovsky.html"><span data-lang="tr">← Önceki</span><span data-lang="en" hidden>← Previous</span><span data-lang="de" hidden>← Zurück</span><strong>Andrei Tarkovski</strong></a>
+    <a class="pn-home" href="../index.html" data-lang="tr">Sinefil ana sayfa</a>
+    <a class="pn-home" href="../index.html" data-lang="en" hidden>Sinefil home</a>
+    <a class="pn-home" href="../index.html" data-lang="de" hidden>Sinefil-Startseite</a>
+    <a class="pn-next" href="martin-scorsese.html"><span data-lang="tr">Sonraki →</span><span data-lang="en" hidden>Next →</span><span data-lang="de" hidden>Weiter →</span><strong>Martin Scorsese</strong></a>
+  </nav>
+  <script src="../lang.js"></script>
 </body>
 </html>
