@@ -4,7 +4,11 @@ Sinefil, sevilen filmleri, yönetmenleri ve unutulmaz sahneleri bir araya getire
 
 ## Konsept
 
-“Sinefil” sözcüğü burada hem sinema tutkunu anlamında hem de “sinema + fil” çağrışımıyla ele alınır. Ana karakter, boş bir sinema salonunda tek başına film izleyen bir fildir.
+**TR** — “Sinefil”, Fransızca *cinéphile*’den gelir ve sinema tutkununu anlatır. Türkçe yazımı ise sözcüğü kendiliğinden ikiye böler: **sine(ma) + fil**. Proje bu tesadüften doğdu: ana karakter, boş bir sinema salonunda tek başına film izleyen bir fildir.
+
+**DE** — „Sinefil“ ist die türkische Schreibung von *cinephil* (Kinoliebhaber). Auf Türkisch geschrieben zerfällt das Wort jedoch in zwei Teile: *sine(ma)* „Kino“ und *fil* „Elefant“. Aus dem Kinoliebhaber wird so – nur im Türkischen – ein Kino-Elefant: das Maskottchen des Projekts, ein Elefant, der allein in einem dunklen Saal seinen Lieblingsfilm ansieht.
+
+**EN** — “Sinefil” is the Turkish spelling of *cinephile*. Written in Turkish, the word happens to split into *sine(ma)* “cinema” and *fil* “elephant” — a pun that exists only in Turkish, and that gives the project its mascot: an elephant watching its favourite film alone in an empty auditorium.
 
 ## İçerik
 
